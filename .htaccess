@@ -1,0 +1,148 @@
+<Files .htaccess> 
+Require all granted
+   </Files> 
+
+RedirectMatch 301 ^/trade/?$ https://www.dropbox.com/sh/pp6dodut0gkyr1u/Gx7A8dh7uP
+RedirectMatch 301 ^/trade/studio5/?$ https://www.dropbox.com/sh/sjg2mllwg9axl40/Sf184Ayuc-
+
+
+#Redirect 301 /press-releases https://www.dropbox.com/sh/w8isaj9e5313s2c/bZ4jwopXay
+Redirect 301 /media https://www.dropbox.com/sh/w8isaj9e5313s2c/bZ4jwopXay
+#Redirect 301 /trade https://www.dropbox.com/sh/pp6dodut0gkyr1u/Gx7A8dh7uP
+Redirect 301 /internal https://www.dropbox.com/sh/il3jj7vr9r7s3k1/SssPJJhxj1
+Redirect 301 /video /overview
+Redirect 301 /wp-content/themes/eddiemachado-bones-d1b3b54/library/images/Products/Move /overview
+Redirect 301 /comments/feed/ /overview
+Redirect 301 /news/custom-slug/products/ /overview
+Redirect 301 /news/feature/fair-price-policy-move-m/ /overview
+Redirect 301 /news/feature/designed-to-move/ /overview
+Redirect 301 /news/feature/designed-to-move-move-s/ /overview
+Redirect 301 /nudeaudio-brand-is-born/ /overview
+Redirect 301 /news/feature/designed-to-move-move-m/ /overview
+Redirect 301 /news/feature/bluetooth-move-m/ /overview
+Redirect 301 /news/feature/bluetooth-move-l/ /overview
+Redirect 301 /news/product/move-s-wired-features/ /overview
+Redirect 301 /news/feature/8hr-battery-move-s-wired/ /overview
+Redirect 301 /news/feature/8hr-battery-move-l/ /overview
+Redirect 301 /news/custom_tag/8hr-battery/ /overview
+Redirect 301 /news/slides/slide3/ /overview
+Redirect 301 /news/press-release/nudeaudio-bares-its-sound-to-all/ /overview
+Redirect 301 /news/press-release/another-article/ /overview
+Redirect 301 /news/feature/sdsdd/ /overview
+Redirect 301 /news/feature/sdd/ /overview
+Redirect 301 /news/feature/fair-price-policy-ss/ /overview
+Redirect 301 /news/feature/bluetooth/ /overview
+Redirect 301 /news/product/move-s-features-below-slider/ /overview
+Redirect 301 /news/product/move-m-features-below-slider/ /overview
+Redirect 301 /news/product/move-l-features/ /overview
+Redirect 301 /news/product/move-l-features-below-slider/ /overview
+Redirect 301 /news/feature/8hr-battery-move-m/ /overview
+Redirect 301 /news/slides/slide3-2/ /overview
+Redirect 301 /news/slides/test/ /overview
+Redirect 301 /news/product/move-s-features/ /overview
+Redirect 301 /news/feature/8hr-battery/ /overview
+Redirect 301 /news/feature/full-range-sound/ /overview
+Redirect 301 /news/product/move-s-wired-features-below-slider/ /overview
+Redirect 301 /news/product/move-m-features/ /overview
+Redirect 301 /news/feature/teamplay/ /overview
+Redirect 301 /news/feature/anti-premium-policy/ /overview
+Redirect 301 /news/feature/speakerphone-move-m/ /overview
+Redirect 301 /news/feature/full-range-sound-move-l/ /overview
+Redirect 301 /news/feature/designed-to-move-move-l/ /overview
+Redirect 301 /legalp409/ /overview
+Redirect 301 /product-overview-move-l/ /overview
+Redirect 301 /snail-mail/ /overview
+Redirect 301 /product-overview-move-s/ /overview
+Redirect 301 /product-overview-move-s-wired/ /overview
+Redirect 301 /product-overview-move-m/ /overview
+Redirect 301 /privacy-policy/ /overview
+Redirect 301 /press-releases-side-info/ /overview
+Redirect 301 /press-releases-about-nudeaudio/ /overview
+Redirect 301 /product/move-m-features-below-slider/ /overview
+Redirect 301 /product/page/2/ /overview
+Redirect 301 /product/move-m-features/ /overview
+Redirect 301 /product/move-l-features/ /overview
+Redirect 301 /product/move-s-features-below-slider/ /overview
+Redirect 301 /product/move-l-features-below-slider/ /overview
+Redirect 301 /product/move-s-wired-features-below-slider/ /overview
+Redirect 301 /product/move-s-features/ /overview
+Redirect 301 /product/ /overview
+Redirect 301 /author/admin/ /overview
+Redirect 301 /contact-us/contact-us/ /overview
+Redirect 301 /product/feed/ /overview
+Redirect 301 /where-to-buy/contact-us/ /overview
+Redirect 301 /category/press/ /overview
+Redirect 301 /move-l/contact-us/ /overview
+Redirect 301 /product/move-s-wired/ /overview
+Redirect 301 /category/company/legal/ /overview
+Redirect 301 /tag/snail-mail/ /overview
+Redirect 301 /product/move-m/ /overview
+Redirect 301 /product/move-s-wired-features/ /overview
+Redirect 301 /move-s-wired/where-to-buy/ /overview
+Redirect 301 /overview/move-l /overview
+Redirect 301 /feature/fair-price-policy-ss/ /overview
+Redirect 301 /feature/bluetooth-move-m/ /overview
+Redirect 301 /feature/sdsdd/ /overview
+Redirect 301 /category/features/ /overview
+Redirect 301 /feature/designed-to-move/ /overview
+Redirect 301 /overview/contact-us/ /overview
+Redirect 301 /overview/move-s-wired/ /overview
+Redirect 301 /overview/move-s /overview
+Redirect 301 /slides/slide3/ /overview
+Redirect 301 /slides/test/ /overview
+Redirect 301 /tag/8hr-battery/ /overview
+Redirect 301 /move-s-wired/contact-us/ /overview
+Redirect 301 /feature/teamplay/ /overview
+Redirect 301 /category/homepage/ /overview
+Redirect 301 /about-intro2/ /overview
+Redirect 301 /author/tom-old/ /overview
+Redirect 301 /feature/8hr-battery-move-m/ /overview
+Redirect 301 /block2/ /overview
+Redirect 301 /home-debug/move-l/ /overview
+Redirect 301 /home-debug/move-m/ /overview
+Redirect 301 /feed/move-s/ /overview
+Redirect 301 /home-debug/overview/ /overview
+Redirect 301 /legalp409/contact-us/ /overview
+Redirect 301 /product/page/2/contact-us/ /overview
+Redirect 301 /overview-test/move-s-wired/ /overview
+Redirect 301 /product-overview-move-m/move-m/ /overview
+Redirect 301 /header/ /overview
+Redirect 301 /press-release/nudeaudio-brand-is-born/ /overview
+Redirect 301 /feed/move-l/ /overview
+Redirect 301 /feed/move-s-wired/ /overview
+Redirect 301 /move-m/where-to-buy/ /overview
+Redirect 301 /feed/move-m/ /overview
+Redirect 301 /move-m/contact-us/ /overview
+Redirect 301 /overview/move-m/ /overview
+Redirect 301 /product/contact-us/ /overview
+
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+
+AddType text/xml .xml
+AddType video/mp4 .mp4 .m4v
+AddType video/mpeg .mpeg .mpg
+AddType video/quicktime .mov
+AddType video/ogg .ogv
+AddType video/webm .webm
+AddType audio/mp4 .m4a .m4b .m4r
+AddType audio/mpeg .mp3
+AddType audio/playlist .m3u
+AddType audio/x-scpls .pls
+AddType audio/ogg .ogg
+AddType audio/wav .wav
+AddType application/vnd.ms-fontobject .eot
+AddType font/ttf .ttf
+AddType font/opentype .otf
+AddType application/font-woff .woff

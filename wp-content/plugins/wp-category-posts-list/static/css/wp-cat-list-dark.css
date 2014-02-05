@@ -1,0 +1,84 @@
+/**
+ * Dark Theme
+ * @author Swashata <swashata4u@gmail.com>
+ * @package WordPress
+ * @subpackage WP Category Post List
+ * @since 1.0.0
+ */
+/** The li background */
+.wp-cpl-theme-1 li {
+    border: 1px solid #818181 !important;
+}
+
+/** The thumbnail */
+.wp-cpl-theme-1 li span.wp-thumb-overlay {
+    background: #4f4f4f !important;
+    border: 1px solid #303030 !important;
+}
+.wp-cpl-theme-1 li.wp-cpl-sticky span.wp-thumb-overlay {
+    background: #999966 !important;
+    border: 1px solid #303030 !important;
+}
+/** The even and odd */
+.wp-cpl-theme-1 li.wp-cpl-even {
+    background: #242424 !important;
+}
+.wp-cpl-theme-1 li.wp-cpl-odd {
+    background: #373737 !important;
+}
+/** The sticky post */
+.wp-cpl-theme-1 li.wp-cpl-sticky {
+    background: #626400 !important;
+    border: 1px solid #463d15 !important;
+}
+
+
+/*************************
+ * THE SHORTCODE SECTION
+ ************************/
+/** Main wrap */
+.wp-cpl-sc-theme-1 {
+    color: #dddddd !important;
+}
+.wp-cpl-sc-theme-1 a {
+    color: #33ccff !important;
+}
+.wp-cpl-sc-theme-1 .wp-cpl-sc-sticky a {
+    color: #ccffcc !important;
+}
+
+/** Entry wrap */
+.wp-cpl-sc-theme-1 .wp-cpl-sc-post {
+    background: #242424 !important;
+    border: 1px solid #000 !important;
+}
+.wp-cpl-sc-theme-1 .wp-cpl-sc-sticky {
+    background: #626400 !important;
+    border: 1px solid #463d15 !important;
+}
+
+/** Thumb anchor */
+.wp-cpl-sc-theme-1 .wp-cpl-sc-post .wp-cpl-sc-thumba {
+    background: #666666 !important;
+    border: 1px solid #303030 !important;
+}
+.wp-cpl-sc-theme-1 .wp-cpl-sc-sticky .wp-cpl-sc-thumba {
+    background: #999966 !important;
+    border: 1px solid #303030 !important;
+}
+
+/** Post h2 */
+.wp-cpl-sc-theme-1 .wp-cpl-sc-post h2 a {
+    color: #ccffff !important;
+}
+.wp-cpl-sc-theme-1 .wp-cpl-sc-sticky h2 a {
+    color: #ccff99 !important;
+}
+
+/** Post meta box */
+.wp-cpl-sc-theme-1 .wp-cpl-sc-post .wp-cpl-sc-meta {
+    background: #666666 !important;
+}
+.wp-cpl-sc-theme-1 .wp-cpl-sc-sticky .wp-cpl-sc-meta {
+    background: #999966 !important;
+}

@@ -1,0 +1,4221 @@
+
+
+
+
+
+html.js body#container.home div.homepagebgd header.header div#inner-header.wrap div#social div#socialbar.widgets_on_page ul li#cnss_widget-2.widget table.cnss-social-icon tbody tr td a img {
+  opacity:1;
+height: 100%; }
+
+/* fonts */
+@font-face {
+  font-family: HelveticaNeueLt;
+  src: url("../fonts/HelveticaNeueLTStd-LtCn.otf");
+}
+@font-face {
+  font-family: HelveticaNeueMd;
+  src: url("../fonts/HelveticaNeueLTStd-MdCn.otf");
+}
+
+@font-face {
+  font-family: HelveticaNeueLTStd;
+  src: url("../fonts/HelveticaNeueLTStd-Cn.otf");
+}
+@font-face {
+  font-family: HelveticaNeueLTStdBdCn;
+  src: url("../fonts/HelveticaNeueLTStd-BdCn.otf");
+}
+/*.fontsty1 { /* Helvetica 57 Condensed */
+	/*font-family:'HelveticaNeueW01-57Cn', arial;
+  font-family:'HelveticaNeueW01-47LtCn 692686', arial;
+}
+
+.fontsty2 { /* Helvetica 47 Light Condensed /*
+	font-family:'HelveticaNeueW01-47LtCn 692686', arial;
+}
+
+.fontsty3 { /* Helvetica 67 Medium Condensed */
+/*	font-family:'HelveticaNeueW01-67MdCn 692710', arial;
+}
+
+.fontsty4 { /* reserved */
+/*	font-family:'HelveticaNeueW01-67MdCn 692710', arial;
+}
+
+.fontsty5 { /* URW Grotesk Con E Light */
+/*	font-family: u004042e, arial;
+}*/
+
+
+
+/*colour */
+
+/* green #55b39c like buttons and readmores*/
+.green { color:#55b39c; }
+.grey { color:#545458; }
+.red { color:#ef4a5d; }
+.white { color:#fff;}
+
+.bgd-red { background-color:#ef4a5d; }
+
+
+
+hr { display: block; height: 1px;
+    border: 0; border-top: 1px solid #c9ced1;
+    margin: 1em 0; padding: 0; 
+	border-color:#c9ced1;
+	background-color:#c9ced1; 
+	color:#c9ced1;}
+	
+	table.cnss-social-icon tr td, table.cnss-social-icon, table.cnss-social-icon tr {
+    width: 100px !important;
+}
+
+
+/******************************************************************
+Site Name: NudeAudio
+Author: JJ Marketing
+Stylesheet: Main Stylesheet
+
+Here's where the magic happens. Here, you'll see we are calling in
+the separate media queries. The base mobile goes outside any query
+and is called at the beginning, after that we call the rest
+of the styles inside media queries.
+******************************************************************/
+/*! normalize.css 2012-07-07T09:50 UTC - http://github.com/necolas/normalize.css */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/*
+ * Corrects `block` display not defined in IE6/7/8/9 & FF3.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+/*
+ * Corrects `inline-block` display not defined in IE6/7/8/9 & FF3.
+ */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+/*
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+/*
+ * Addresses styling for `hidden` attribute not present in IE7/8/9, FF3, S4.
+ * Known issue: no IE6 support.
+ */
+[hidden] {
+  display: none;
+}
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Corrects text resizing oddly in IE6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevents iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-size: 100%;
+  /* 1 */
+
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+
+}
+/*
+ * Addresses `font-family` inconsistency between `textarea` and other form
+ * elements.
+ */
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+/*
+ * Addresses margins handled incorrectly in IE6/7.
+ */
+body {
+  margin: 0;
+}
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/*
+ * Addresses `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+  outline: thin dotted;
+}
+/*
+ * Improves readability when focused and also mouse hovered in all browsers.
+ * people.opera.com/patrickl/experiments/keyboard/test
+ */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+  /*********************
+  NAVIGATION STYLES
+  *********************/
+nav {
+  float:left;
+  width:400px;
+  margin:20px 0 0 180px;
+} 
+
+.footer nav {
+  margin:0;
+} 
+
+.nav {
+    margin:20px 12px 13px 185px;
+    width:400px;
+    float:left;
+  }
+.nav li {
+    float: left;
+    position: relative;
+  
+  }
+  .nav li a {
+    border-bottom: 0;
+  }
+
+  .home .nav li a {
+    color: #98e2bf;
+  }
+
+
+  .home .nav li a:hover,.home .nav li a:focus {
+    color: #EF4A5D;
+}
+
+  .nav li a:hover,
+  .nav li a:focus {
+  color:#EF4A5D;
+  }
+  .nav li ul.sub-menu,
+  .nav li ul.children {
+    margin-top: 0;
+    border: 1px solid #ccc;
+    border-top: 0;
+    position: absolute;
+    display: none;
+    z-index: 8999;
+    /* highlight sub-menu current page */
+  
+  }
+  .nav li ul.sub-menu li,
+  .nav li ul.children li {
+    /*
+          if you need to go deeper, go nuts
+          just remember deeper menus suck
+          for usability. k, bai.
+          */
+  
+  }
+  .nav li ul.sub-menu li a,
+  .nav li ul.children li a {
+    padding-left: 10px;
+    border-right: 0;
+    display: block;
+    width: 180px;
+    border-bottom: 1px solid #ccc;
+  }
+  .nav li ul.sub-menu li:last-child a,
+  .nav li ul.children li:last-child a {
+    border-bottom: 0;
+  }
+  .nav li:hover ul {
+    top: auto;
+    display: block;
+  }
+  /* end .nav */
+
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/*
+ * Addresses font sizes and margins set differently in IE6/7.
+ * Addresses font sizes within `section` and `article` in FF4+, Chrome, S5.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0;
+}
+/*
+ * Addresses styling not present in IE7/8/9, S5, Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+/*
+ * Addresses style set to `bolder` in FF3+, S4/5, Chrome.
+ */
+b,
+strong {
+  font-weight: bold;
+}
+blockquote {
+  margin: 1em 40px;
+}
+/*
+ * Addresses styling not present in S5, Chrome.
+ */
+dfn {
+  font-style: italic;
+}
+/*
+ * Addresses styling not present in IE6/7/8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000;
+}
+/*
+ * Addresses margins set differently in IE6/7.
+ */
+p,
+pre {
+  margin: 1em 0;
+}
+/*
+ * Corrects font set oddly in IE6, S4/5, Chrome.
+ * en.wikipedia.org/wiki/User:Davidgothberg/Test59
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+/*
+ * Improves readability of pre-formatted text in all browsers.
+ */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+/*
+ * Addresses CSS quotes not supported in IE6/7.
+ */
+q {
+  quotes: none;
+}
+/*
+ * Addresses `quotes` property not supported in S4.
+ */
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+small {
+  font-size: 75%;
+}
+/*
+ * Prevents `sub` and `sup` affecting `line-height` in all browsers.
+ * gist.github.com/413930
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+/*
+ * Addresses margins set differently in IE6/7.
+ */
+dl,
+menu,
+ol,
+ul {
+  margin: 0;
+}
+dd {
+  margin: 0;
+}
+/*
+ * Addresses paddings set differently in IE6/7.
+ */
+menu,
+ol,
+ul {
+  padding: 0;
+}
+/*
+ * Corrects list images handled incorrectly in IE7.
+ */
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * 1. Removes border when inside `a` element in IE6/7/8/9, FF3.
+ * 2. Improves image quality when scaled in IE7.
+ *    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
+ */
+img {
+  border: 0;
+  /*margin:20px 0 0 115px;*/
+  /* 1 */
+
+  -ms-interpolation-mode: bicubic;
+  /* 2 */
+
+}
+/*
+ * Corrects overflow displayed oddly in IE9.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/*
+ * Addresses margin not present in IE6/7/8/9, S5, O11.
+ */
+figure {
+  margin: 0;
+}
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/*
+ * Corrects margin displayed oddly in IE6/7.
+ */
+form {
+  margin: 0;
+}
+/*
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+/*
+ * 1. Corrects color not being inherited in IE6/7/8/9.
+ * 2. Corrects text not wrapping in FF3.
+ * 3. Corrects alignment displayed oddly in IE6/7.
+ */
+legend {
+  border: 0;
+  /* 1 */
+
+  padding: 0;
+  white-space: normal;
+  /* 2 */
+
+  *margin-left: -7px;
+  /* 3 */
+
+}
+/*
+ * 1. Corrects font size not being inherited in all browsers.
+ * 2. Addresses margins set differently in IE6/7, FF3+, S5, Chrome.
+ * 3. Improves appearance and consistency in all browsers.
+ */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 1 */
+
+  margin: 0;
+  /* 2 */
+
+  vertical-align: baseline;
+  *vertical-align: middle;
+  /* 3 */
+
+}
+/*
+ * Addresses FF3/4 setting `line-height` on `input` using `!important` in the
+ * UA stylesheet.
+ */
+button,
+input {
+  line-height: normal;
+}
+/*
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Removes inner spacing in IE7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE6.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+
+  cursor: pointer;
+  /* 3 */
+
+  *overflow: visible;
+  /* 4 */
+
+}
+/*
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+/*
+ * 1. Addresses box sizing set to content-box in IE8/9.
+ * 2. Removes excess padding in IE8/9.
+ * 3. Removes excess padding in IE7.
+ *    Known issue: excess padding remains in IE6.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+
+  padding: 0;
+  /* 2 */
+
+  *height: 13px;
+  *width: 13px;
+  /* 3 */
+
+}
+/*
+ * 1. Addresses `appearance` set to `searchfield` in S5, Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in S5, Chrome (include `-moz`
+ *    to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+
+  box-sizing: content-box;
+}
+/*
+ * Removes inner padding and search cancel button in S5, Chrome on OS X.
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/*
+ * Removes inner padding and border in FF3+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+/*
+ * 1. Removes default vertical scrollbar in IE6/7/8/9.
+ * 2. Improves readability and alignment in all browsers.
+ */
+textarea {
+  overflow: auto;
+  /* 1 */
+
+  vertical-align: top;
+  /* 2 */
+
+}
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/*
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/******************************************************************
+CUSTOMIZED RESET VALUES
+I added these extra styles as a more personalized reset. Feel free
+to remove them if you like or add your own. If you want to update
+the normalize styles, make sure to edit from this point up.
+******************************************************************/
+p {
+  -webkit-hyphens: auto;
+  -epub-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+b,
+strong,
+.strong {
+  font-weight: bold;
+}
+dfn,
+em,
+.em {
+  font-style: italic;
+}
+small,
+.small {
+  font-size: 75%;
+}
+ul,
+ol {
+  padding: 0;
+  list-style-type: none;
+}
+dd {
+  margin: 0;
+}
+.sidebar ul,
+.sidebar ol,
+.commentlist {
+  list-style: none;
+}
+/******************************************************************
+Site Name: NudeAudio
+Author: JJ MarketingStylesheet: Mixins & Constants Stylesheet
+
+This is where you can take advantage of LESS' great features: 
+Mixins & Constants. I won't go in-depth on how they work exactly,
+there are a few articles below that will help do that. What I will
+tell you is that this will help speed up simple changes like
+changing a color or adding CSS3 techniques like box shadow and
+border-radius.
+
+A WORD OF WARNING: It's very easy to overdo it here. Be careful and
+remember less is more. 
+
+******************************************************************/
+/*********************
+CLEARFIXIN'
+*********************/
+.clearfix {
+  zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+/*********************
+TOOLS
+*********************/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.image-replacement {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/*********************
+COLORS
+/*********************
+
+/*Main */
+/*#dfdfdf  home top grey */
+/*#98e2bf  green */
+/*#a1a2a5  grey text */
+
+/*Navbar */
+/*#b7b9ba  nav grey 
+/*#9c9c9e  highlight on nav */
+
+/*Social bar */
+/*#565d5b  highlighted */
+
+
+/*********************
+TYPOGRAPHY
+*********************/
+
+/* first for IE 4â€“8 */
+@font-face {
+  font-family: u004042e;
+  src: url("fonts/u004042eWeb.eot");
+}
+
+/* then for WOFF-capable browsers */
+@font-face {
+  font-family: u004042e;
+  src: url("fonts/u004042eWeb.woff") format("woff");
+}
+
+/* go on with normal style definitions */
+body { 
+  font-family: u004042e, sans-serif;
+}
+
+
+
+span.amp {
+  font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
+  font-style: italic;
+}
+/* text alignment */
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.alert {
+  margin: 10px;
+  padding: 5px 18px;
+  border: 1px solid;
+}
+.alert-help {
+  margin: 10px;
+  padding: 5px 18px;
+  border: 1px solid;
+  border-color: #e8dc59;
+  background: #ebe16f;
+}
+.alert-info {
+  margin: 10px;
+  padding: 5px 18px;
+  border: 1px solid;
+  border-color: #bfe4f4;
+  background: #d5edf8;
+}
+.alert-error {
+  margin: 10px;
+  padding: 5px 18px;
+  border: 1px solid;
+  border-color: #f8cdce;
+  background: #fbe3e4;
+}
+.alert-success {
+  margin: 10px;
+  padding: 5px 18px;
+  border: 1px solid;
+  border-color: #deeaae;
+  background: #e6efc2;
+}
+/*********************
+BORDER RADIUS
+*********************/
+/* 
+NOTE: For older browser support (and some mobile), 
+don't use the shorthand to define *different* corners. 
+
+USAGE: .border-radius(4px); 
+
+*/
+/*********************
+TRANISTION
+*********************/
+/* .transition(all,2s); */
+/*********************
+CSS3 GRADIENTS
+Be careful with these since they can 
+really slow down your CSS. Don't overdo it.
+*********************/
+/* .css-gradient(#dfdfdf,#f8f8f8); */
+/*********************
+BOX SHADOW
+*********************/
+/* .boxShadow(0,0,4px,0,#444); */
+/* .boxShadow(none); */
+
+
+
+
+
+
+
+/******************************************************************/
+/* AB styles */
+/******************************************************************/
+.homebgd {
+	width:1000px;
+	background: url('http://www.nudeaudio.com/wp-content/themes/library/images/logo.png') no-repeat top right !important;
+	margin:0 auto;
+}
+
+#menu-icon, #social-icon-mobile, #social-panel-mobile, #menu-panel-mobile {
+	display:none;
+}
+
+
+
+#homepage-header {
+	padding:0 0 22px 0;
+	width:1000px;/*1000px*/
+	height:670px;/*530px*/
+  background-color:#545458;
+}
+
+#homepage-header p {
+	font-size:24px;
+	line-height: 40px;
+	font-family:'HelveticaNeueW01-47LtCn 692686', arial}
+
+/*#homepage-header h1,h2 {
+  font-size: 24px;
+  line-height: 42px;
+}
+
+#homepage-header h2.samepara {
+  line-height: 20px;
+}*/
+
+/* Helvetica Neue 47 Light Condensed */
+/* font-family:'HelveticaNeueW01-47LtCn 692686'; */
+
+/* Helvetica Neue 67 Medium Condensed */
+/* font-family:'HelveticaNeueW01-67MdCn 692710'; */
+
+#main {
+	width:100%;
+}
+
+#social {
+	margin:20px 0 0 0;
+	float:right;
+	/*background-color:#ff0000;*/
+	z-index:20;
+}
+
+.socialicon {
+  width: 26px;
+  height: 26px;
+}
+
+.socialicon:hover { /* red */
+  background-position: 0 56px;
+}
+
+.socialiconGRE:hover { /* green */
+  background-position: 0 28px;
+}
+
+.home .socialicon {
+   background-position: 0 28px;
+}
+
+.home .socialicon:hover {
+   background-position: 0 56px;
+}
+
+.home #logo:hover {
+   background: url("http://www.nudeaudio.com/wp-content/themes/eddiemachado-bones-d1b3b54/library/images/logo-mainON.png") no-repeat scroll right top transparent;
+}
+
+.home #socialbar.widgets_on_page #cnss_widget-2.widget .cnss-social-icon .socialicon:hover {
+  background-position: 0 56px;
+}
+
+
+/*read more link */
+
+.post-link code a, .bluetooth-link a span, .speakerphone-link a span, .designedtomove-link a span, .battery-link a span, .range-link a span {
+	color:#55b39c;
+	transition: all 0.2s ease-in-out 0s;
+  font-size:13px;
+  font-weight:bold; 
+}
+
+
+/******************************************************************/
+/* Social icons */
+/******************************************************************/
+.social-email { background: url('http://www.nudeaudio.com/wp-content/themes/eddiemachado-bones-d1b3b54/library/images/email-icon.png') no-repeat top right }
+.social-facebook { background: url('http://www.nudeaudio.com/wp-content/themes/eddiemachado-bones-d1b3b54/library/images/facebook-icon.png') no-repeat top right }
+.social-gplus { background: url('http://www.nudeaudio.com/wp-content/themes/eddiemachado-bones-d1b3b54/library/images/gplus-icon.png') no-repeat top right }
+.social-pinterest { background: url('http://www.nudeaudio.com/wp-content/themes/eddiemachado-bones-d1b3b54/library/images/pinterest-icon.png') no-repeat top right }
+.social-twitter { background: url('http://www.nudeaudio.com/wp-content/themes/eddiemachado-bones-d1b3b54/library/images/twitter-icon.png') no-repeat top right }
+
+.cnss-social-icon a {
+	width:30px !important;
+}
+
+.button {
+	display:block;
+	clear:both;
+	width:161px;
+	height:50px;
+	margin:0 auto;	
+	text-decoration:none;
+}
+
+a div.button {
+	text-decoration:none;
+}
+
+
+
+
+/******************************************************************/
+/* header */
+/******************************************************************/
+
+#logo {
+	margin:21px 0 0 110px;
+	float:left;
+	background: url("http://www.nudeaudio.com/wp-content/themes/nudeaudio/library/images/logo-main.png") no-repeat scroll right top transparent;
+	width:142px;
+	height:25px;
+}	
+
+#logo:hover {
+  background: url("http://www.nudeaudio.com/wp-content/themes/nudeaudio/library/images/logo-mainON.png") no-repeat scroll right top transparent;
+} 
+
+
+.home .homepagebgd .header #inner-header.wrap a #logo {
+    background: url("http://www.nudeaudio.com/wp-content/themes/nudeaudio/library/images/logo-mainONGRE.png") no-repeat scroll right top transparent;
+}
+.home .homepagebgd .header #inner-header.wrap a #logo:hover {
+    background: url("http://www.nudeaudio.com/wp-content/themes/nudeaudio/library/images/logo-mainON.png") no-repeat scroll right top transparent;
+}
+
+
+
+
+/******************************************************************/
+/* Footer section */
+/******************************************************************/
+
+.footer {
+	text-align:center;
+	/*width:100%; /*1000px*/
+	min-width:1000px;
+	/*float:left;*/
+	color:#889aa4;
+	background-color:#545458;
+	/*padding:10px 11px 12px 13px;*/
+	margin:0 auto;
+}
+
+#inner-footer {
+	width:1000px;
+	margin:0 auto;
+	padding:10px 0 0 0;
+}
+
+.footer a  {
+	text-decoration:none;
+}
+
+.footer ul.bottomnav {
+	margin:19px 0 0 120px;
+}
+
+
+.footer ul.bottomnav li {
+	width:170px;
+	list-style: none;
+	float: left;
+	margin:0;
+	padding:0;
+	text-align:left;
+}
+
+/* remove default padding */
+.footer .widget ul li ul {
+    margin-top: 0;
+    padding-left: 0;
+}
+
+.footer ul.bottomnav li {
+	float: left;
+}
+
+/*subheader */
+.footer .menu li a {
+	font-size:22px;
+	line-height:30px;
+	font-family: u004042e, arial;
+	text-transform:uppercase;
+	color:#98e2bf;
+
+}
+
+/* page links */
+.footer .sub-menu li a {
+	font-size:15px;
+	line-height:24px;
+	/*font-family:'HelveticaNeueW01-57Cn';*/
+  font-family:'HelveticaNeueLt', arial;
+	color:#ebebeb;
+	text-transform:capitalize;
+}
+
+.footer a:hover{
+	color:#98e2bf !important;
+}
+
+.copyright {
+    color: #8C9194;
+    float: right;
+    /*font-family: 'HelveticaNeueW01-57Cn';*/
+    font-family:'HelveticaNeueLt', arial;
+    font-size: 13px;
+    margin: 50px 0 20px;
+    text-align: left;
+    width: 443px;
+}
+
+#newsletter-signup {
+  background-color: #545458;
+  width: 100%;
+  border-bottom: 1px solid #707376;
+  float: left;
+}
+
+.mc_merge_var label {
+  display:none;
+}
+
+#inner-newsletter-signup{
+  width: 616px;
+  height: 105px;
+  margin: 0 auto;
+  /*font-family:'HelveticaNeueW01-57Cn', arial;*/
+  font-family:'HelveticaNeueLt', arial;
+  font-size: 23px;
+  color: #98e2bf;
+  padding:0;
+}
+
+#email-signup {
+  float:right;
+}
+
+.mc_success_msg, .mc_error_msg {
+  width: 1000px;
+  height: 105px;
+  margin: 0 auto;
+  /*font-family:'HelveticaNeueW01-57Cn', arial;*/
+  font-family:'HelveticaNeueLt', arial;
+  font-size: 23px;
+  color: #98e2bf;
+}
+
+#inner-newsletter-signup span {
+  margin: 39px 0 37px;
+  float: left;
+}
+
+#inner-newsletter-signup form {
+  float: left;
+  width: 285px;
+  margin: 40px 0 0 0;
+}
+
+.basic #inner-content, .basic #inner-content {
+    margin: 100px 0 0 118px;
+    float: right;
+    min-height: 700px;
+}
+
+#mc_signup_form {
+  margin:00;
+  padding:0;
+}
+
+
+
+/******************************************************************/
+/* homepage */
+/******************************************************************/
+
+.home #midsection {
+	width:100%;
+	background-color:#eaedef;
+}
+
+.home #midsection-inner {
+	font-family: u004042e, arial;
+	text-align:center;
+	width:1000px;
+	/*float:left;*/
+	font-size:20px;
+	line-height:20px;
+	padding:40px 0 95px 0;
+	margin:0 auto;
+}
+
+.home #midsection #block1, .home #midsection #block2, .home #midsection #block3{
+	width:300px;
+	margin:50px 20px 65px 66px;
+	float:left;
+	/*background-color:#ff0000;*/
+	color:#7c7d80;
+}
+
+.home #midsection #block1 h3, .home #midsection #block3 h3{
+  margin:24px 0 0 0;
+}
+
+
+#midsection-inner #block3 h3 {
+  line-height:normal;
+}
+
+
+.home #midsection h3, .home #midsection {
+	font-size:30px;
+	font-family: u004042e, arial;
+	color:#545458;
+  line-height
+}
+
+.home #midsection p.subhead {
+	font-size:24px;
+	line-height: 24px;
+	font-family:'HelveticaNeueMd', arial;
+	color:#545458;
+	float:none;
+}
+
+#midsection-inner div#block1 p, #midsection-inner div#block2 p, #midsection-inner div#block3 p, #midsection-inner div#block4 p {
+	font-size:15px;
+	line-height: normal;
+  font-family:'HelveticaNeueLt', arial;
+}
+
+
+.home #midsection .button, .button:visited {
+    padding: 15px 0 0;
+}
+
+
+
+/******************************************************************/
+/* product page */
+/******************************************************************/
+
+.product #midsection  {
+	width:100%;
+	background-color:#eaedef; /* #eaedef*/
+  /*max-height: 600px;*/
+  height: 510px;
+}
+
+.product #midsection-inner  {
+	font-family: u004042e, arial;
+	/*text-align:center;*/
+	width:950px;
+	/*font-size:20px;
+	line-height: 20px;*/
+
+	margin: 0 auto;
+	text-align:center;
+}
+
+#block6 .button {
+  display:none;
+
+}
+
+
+
+/******************************************************************/
+/* product page  fair price section */
+/******************************************************************/
+
+#fairpricesection {
+	padding:50px 0 90px;
+	width:100%;
+	color:#545458;
+	background-color:#eaedef;
+	float:left;
+	margin:0 auto;
+	display:block;
+	height:auto;
+}
+
+
+#fairpricesection hr {
+	margin:0 auto;
+	width:1000px;
+}
+
+#fairpricesection-inner p {
+	width:80%;
+}
+
+#fairpricesection-inner {
+    background-color: #009966;
+    /*float: left;*/
+    margin: 0 auto;
+    width: 850px;
+	height:380px;
+ 	position:relative;
+ 	left:-60px;
+}
+}
+
+#fairpricesection-inner img {
+	float:left;
+	margin:100px 0 0;
+}
+
+#fairpricesection-inner #block5 {
+	float:right;
+	width:390px;
+	margin:120px 0 0;
+}
+
+#fairpricesection-inner #block6 {
+	float:left;
+	width:100%;
+}
+	
+#fairpricesection h3 {
+	font-family: u004042e, arial;
+	font-size:36px;
+}
+
+#fairpricesection p {
+	/*font-family:'HelveticaNeueW01-57Cn', arial;*/
+  font-family:'HelveticaNeueLt', arial;
+	font-size:15px;
+	line-height:18px;
+	float:left;
+	margin:0;
+	padding:0;
+}
+
+#fairpricesection span {
+	font-family:'HelveticaNeueLt', arial;
+	font-size:66px;
+	margin:30px 0 20px 0;
+	width:200px;
+	color:#545458;
+}
+
+#fairpricesection .button {
+	float:right;
+	margin:25px 0 20px 0;
+}
+
+div#block5 h3 {
+	margin:0 0 10px 0;
+}
+
+
+.page #midsection #block3 h2 {
+  line-height: normal;
+}
+	
+
+.product #midsection #block1, .product #midsection #block2, .product #midsection #block3{
+	width:415px;
+	/*margin:50px 20px 65px 187px;*/
+	margin: 50px 60px 0 0;
+	float:left;
+	/*background-color:#ff0000;*/
+	color:#7c7d80;
+	/*font-family: 'HelveticaNeueW01-57Cn',arial;*/
+	font-family:'HelveticaNeueW01-47LtCn 692686', arial;
+}
+
+.product #midsection #block7{
+	width:550px;
+	/*margin:50px 20px 65px 187px;*/
+	margin: 0 auto;
+	/*background-color:#ff0000;*/
+	color:#7c7d80;
+	/*font-family: 'HelveticaNeueW01-57Cn',arial;*/
+	/*font-family:'HelveticaNeueW01-47LtCn 692686', arial;*/
+	font-family:'HelveticaNeueLt', arial;
+}
+
+
+/*.product #midsection h3, .product #midsection {
+	font-size:24px;
+	line-height: 24px;
+	font-family: u004042e, arial;
+	color:#545458;
+}*/
+
+
+
+.product #bottomsection {
+    background-color: #EAEDEF;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+
+.product #midsection, .product #bottomsection  {
+	/*font-family:'HelveticaNeueW01-57Cn', arial;*/
+ /* font-family:'HelveticaNeueW01-47LtCn 692686', arial;*/
+	font-family:'HelveticaNeueLt', arial;
+	font-size:15px;
+	line-height: 18px;
+	padding:0 0 60px 0;
+	float:left;
+}
+
+#inner-header {
+	width:1000px;
+}
+
+#bottomsection  {
+	width:100%;
+	margin:0 auto;
+	text-align:center;
+	background-color:#eaedef;
+}
+
+#main{
+	width:100%;
+	margin:0 auto;
+}
+
+.home #main{
+	width:100%;
+	margin:0 auto;
+}
+
+#inner-content {
+    margin: 50px 0 30px;
+}
+
+.about #inner-content {
+    margin: 150px 0 30px;
+}
+
+.home #inner-content {
+   
+}
+
+.support {
+  /*min-height: 600px;*/
+}
+
+.support #inner-content, .legal #inner-content  {
+    margin: 100px 0 0 118px;
+}
+
+.homepagebgd #inner-content, .product #inner-content {
+    margin: 0;
+}
+
+.contact #inner-content {
+    margin: 80px 0 30px;
+}
+
+div.wpcf7-mail-sent-ok {
+    border: 2px solid #98e2bf;
+    float:left;
+    margin: -8px 0 0 0;
+}
+
+div.wpcf7-mail-sent-ng {
+    border: 2px solid #98e2bf;
+}
+
+.press #inner-content {
+    margin: 130px 0 30px;
+}
+
+.product {
+	margin:0 auto;
+	width:100%;
+}
+
+.product #bottomsection-inner  {
+	text-align:center;
+	width: 990px;
+	/*float:left;*/
+	padding: 40px 0 95px 40px;
+	margin:0 auto;
+}
+
+.product #block1, .product #block2, .product #block3, .product #block4, .product #block5 {
+	width:415px;
+	margin:50px 60px 0 0;
+	float:left;
+	/*background-color:#ff0000;*/
+	color:#7c7d80;
+}
+
+.product #contact #sidebar #block2 {
+	margin: 0 60px 0 0;
+}
+
+.product #block7 {
+	width:415px;
+	margin:50px 0 0 0;
+	/*background-color:#ff0000;*/
+	color:#7c7d80;
+}
+
+.product #midsection a, .product #bottomsection a  {
+	/*font-family:'HelveticaNeueW01-57Cn';*/
+  /*font-family:'HelveticaNeueW01-47LtCn 692686', arial;*/
+  font-family:'HelveticaNeueLt', arial;
+	color:#8c9194;
+	font-size:13px;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+.product #bottomsection #block3 a:hover, .product #bottomsection #block4 a:hover, .product #bottomsection #block5 a:hover {
+	color:#889AA4;
+
+}
+
+
+.hcenter {
+	margin:80px 0 0 0;
+}
+
+.product h3 {
+	font-size:36px;
+	line-height: 36px;
+	font-family: u004042e, arial;
+	color:#545458;
+	margin:50px 0 10px 0;
+}
+
+.product #midsection #block7 h3 {
+	margin:20px 0 10px 0;
+}
+
+.product .extra {
+	margin:76px 0 10px 0;
+}
+
+.product .homebgd {
+	width:1000px;
+	background: url('../images/home-main-image.png') no-repeat top right !important;
+	margin:0 auto;
+}
+
+
+/*.product p img  {
+	height:120
+}*/
+
+#scrollbar {
+	height:65px;
+	width:100%;
+	display:block;
+	background: url('../images/Buttons/down-arrow.png') no-repeat 50% 50%;
+}
+
+#scrollbar:hover {
+	background: url('../images/Buttons/down-arrowON.png') no-repeat 50% 50%;
+  cursor:pointer;
+}
+
+
+#product-header, #product-header code {
+	/*font-family:'HelveticaNeueW01-57Cn';*/
+ /* font-family:'HelveticaNeueW01-47LtCn 692686', arial;*/
+ font-family:'HelveticaNeueLt', arial;
+	font-size:15px;
+	line-height: 18px;
+	color:#545458;
+	width:500px;
+}
+
+#product-header .button {
+	background-color: #EF4A5D;
+	color:#FFF;
+}
+
+#product-header .button:hover {
+	background-color: #545458;
+	color:#EF4A5D;
+}
+
+/*#product-header {
+	padding:30px 0 0 130px;
+	display:block;
+	height:654px;
+	width:1070px;
+}*/
+
+#product-header {
+    width:100%;
+	height:93%;
+	margin:0;
+	/*min-width:50%;*/
+}
+
+#product-header-inner {
+    display: block;
+	/*background: url('http://www.nudeaudio.com/wp-content/themes/eddiemachado-bones-d1b3b54/library/images/Products/Move-m/product-m-heroshot.jpg') no-repeat top right;*/
+	height: 748px;
+    margin: 0 auto;
+    padding: 200px 670px 0 123px;
+    width: 1000px;
+}
+
+#product-header-inner img {
+    margin: 0 0 16px 0;
+  
+}
+
+#product-header .button {
+	/*display:block;
+	clear:both;*/
+	/*width:121px;/*161px
+	height:50px;*/
+	margin:0;
+	/*color:#fff;
+	padding: 15px 0 0 33px;*/
+}
+
+/*#product-header .button:hover {
+	color:#ef4a5d;
+	background-color:#545458;
+}*/
+
+/*#product-header a {
+	text-decoration:none;
+	color:#9595915;
+}*/
+
+.header{
+	background-color: rgba(234, 237, 239, 0.85); /* eaedef */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
+	width:100%;
+	min-width:1000px;
+	position:fixed;
+    height: 66px;
+    top: 0;
+	z-index:200;
+}
+#inner-header{
+	width:1000px;
+	margin:0 auto;
+}
+.top-nav {
+  width:100%;
+  margin:auto;
+  float:left;
+}
+
+.defaultbgd, .gallery, .contact, .legal, .press, .homepagebgd, .overviewbgd, .productbgd, .home  {
+	width:100%;
+	margin:0 auto;
+}
+
+.home .header {
+  background: none;
+  border-bottom:1px solid #b4b6c0;
+
+}
+
+
+
+/******************************************************************/
+/* overview page */
+/******************************************************************/
+
+
+.overview #overview-header,  #midsection.overview {
+	width:100%;
+	margin:0 auto;
+	height:690px;
+  background-color: #d7dbe0;
+}
+
+.overview #midsection-inner {
+	width:1000px;
+	margin:0 auto;
+}
+
+.product #midsection.overview #block1 {
+    /*margin:0 !important;*/
+}
+
+#overview-header #midsection-inner {
+	margin:620px 0 0 0;
+	/*padding:30px 0 0 62px;*/
+	display:block;
+	height:800px;
+	float:left;
+	/*background-color:#e8ecee;*/
+	width:1138px; /*1000px*/
+}
+
+#overview-header-inner {
+	width:100%;
+	/*background: url('http://www.nudeaudio.com/wp-content/themes/eddiemachado-bones-d1b3b54/library/images/overview-main-image.jpg') no-repeat top right;*/
+	/*height:650px;*/
+	margin:0 auto;
+	text-align:center;
+	
+	position: relative;
+	padding-bottom: 54.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+
+#overview-header-inner iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#footer-mobile, #hoz-bar1-mobile, #hoz-bar2-mobile  {
+	display:none;
+}
+
+.overviewbgd .header {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+
+	
+/* 2-3 blocks */
+.overviewbgd .product #midsection #block2 {
+	width:245px;
+	margin:0 0 7px 0;
+	float:left;
+	/*background-color:#ff0000;*/
+	color:#7c7d80;
+}
+
+
+/* 2-3 blocks */
+.product #midsection #block3 {
+	width:279px;
+	margin:0 0 7px 0;
+	float:left;
+	/*background-color:#ff0000;*/
+	color:#7c7d80;
+	background-repeat:no-repeat;
+}
+
+/* 1st block */
+.overviewbgd .product #midsection #block1 {
+	width:261px;
+	margin:0 0 0 62px;
+	padding:0;
+	float:left;
+	background-repeat:no-repeat;
+}
+
+/* 4th block */
+.overviewbgd .product #midsection #block4 {
+	width:353px;
+	margin:0 0 0 0;
+	float:left;
+	color:#7c7d80;
+	background-repeat:no-repeat;
+}
+
+#cta1,#cta2,#cta3,#cta4 {
+	display:none;
+}
+
+
+#midsection-inner div#block1 a, #midsection-inner div#block2 a, #midsection-inner div#block3 a, #midsection-inner div#block4 a {
+    font-size: 18px;
+    font-weight: normal;
+}
+	
+.overviewbgd .button, .button:visited {
+    padding: 15px 0 0;
+}
+
+.overviewbgd #cta1.button {
+    width: 109px;
+	margin:0 0 0 56px;
+}
+
+.overviewbgd #cta2.button,.overviewbgd #cta3.button {
+    width: 109px;
+	margin:0 0 0 45px;
+}
+
+
+.overviewbgd #cta4.button {
+    width: 109px;
+	margin:0 0 0 49px;
+}
+
+
+
+/* background images */
+.overviewbgd .product #midsection #block1 .product-image { 
+	background:transparent url(http://www.nudeaudio.com/wp-content/uploads/2013/07/swired.jpg) 0 0; 
+	width:261px;
+	height:346px;
+}
+
+.overviewbgd .product #midsection #block2 .product-image { 
+	background:transparent url(http://www.nudeaudio.com/wp-content/uploads/2013/07/s.jpg) 0 0; 
+	width:245px;
+	height:346px;
+}
+
+.overviewbgd .product #midsection #block3 .product-image { 
+	background:transparent url(http://www.nudeaudio.com/wp-content/uploads/2013/07/m.jpg) 0 0;
+	width:279px;
+	height:346px;
+}
+
+.overviewbgd .product #midsection #block4 .product-image { 
+	background:transparent url(http://www.nudeaudio.com/wp-content/uploads/2013/07/l.jpg) 0 0;
+	width:394px;
+	height:346px; 
+}
+
+/*.overviewbgd .product #midsection #block1 .product-image:hover, .overviewbgd .product #midsection #block2 .product-image:hover , .overviewbgd .product #midsection #block3 .product-image:hover , .overviewbgd .product #midsection #block4 .product-image:hover  { 
+	background-position: 0 -368px;
+}*/
+
+
+/* hover states 
+.overviewbgd .product #midsection #block1:hover, .overviewbgd .product #midsection #block2:hover, .overviewbgd .product #midsection #block3:hover, .overviewbgd .product #midsection #block4:hover {
+	background-color:#ff0000;
+} */
+
+
+
+
+
+
+
+
+
+#midsection-inner p {
+	margin:15px 0 8px 0;
+	/*float:left;*/
+	/*background-color:#ff0000;*/
+	color:#7c7d80;
+	 font-size: 15px;
+    line-height: 18px;
+	text-align:center;
+}
+
+
+
+#midsection-inner h2 {
+	/*font-family:'HelveticaNeueW01-57Cn';*/
+  /*font-family:'HelveticaNeueW01-47LtCn 692686', arial;*/
+	font-family:'HelveticaNeueLt', arial;
+	font-size:15px;
+	line-height:normal;
+	color:#2d3535;
+	text-align:left;
+	margin:0 0 40px 0;
+}
+
+
+/* h2 blocks */
+
+.overviewbgd .product #midsection #block1 h2 {
+	margin: 25px 0 14px 68px;
+	width: 130px;
+}
+
+.overviewbgd .product #midsection #block2 h2 {
+	margin: 25px 0 14px 56px;
+	width: 130px;
+}
+
+.overviewbgd .product #midsection #block3 h2 {
+  margin:  25px 0 14px 59px;
+  width: 130px;
+}
+
+.overviewbgd .product #midsection #block4 h2 {
+	margin: 25px 0 14px 25px;
+	width: 220px;
+	float:left;
+	text-align:left;
+}
+
+
+
+/* p within blocks */
+
+.overviewbgd .product #midsection #block1 p {
+	margin: 15px 0 0 68px;
+    width: 155px;
+	float:left;
+}
+
+.overviewbgd .product #midsection #block2 p {
+	margin: 15px 0 0 54px;
+    width: 152px;
+	float:left;
+}
+
+.overviewbgd .product #midsection #block3 p {
+  margin: 15px 0 0 56px;
+    width: 152px;
+  float:left;
+}
+
+.product #midsection #block4 p {
+  margin: 15px 0 0 45px;
+    width: 152px;
+  float:left;
+}
+
+.overviewbgd .product #midsection #block4 p {
+	margin: 15px 0 0 25px;
+	width: 155px;
+	float:left;
+}
+
+.overviewbgd .product #midsection p img {
+	opacity:0.5;
+	float:left;
+}
+
+div#midsection.overview div#block1 p img, div#midsection.overview div#block2 p img, div#midsection.overview div#block3 p img	{
+	float:left;
+	/*background-color:#ccc;*/
+	margin:0 10px 0 0;
+}
+
+.overviewbgd .product #midsection #block1 span {
+	float: right;
+	margin: 2px 0 6px;
+	text-align: left;
+	width: 105px;
+}
+
+.overviewbgd .product #midsection #block1 span.twolines {
+	margin: 10px 0 6px;
+}
+
+.overviewbgd .product #midsection #block2 span, .overviewbgd .product #midsection #block3 span, .overviewbgd .product #midsection #block4 span {
+	float: right;
+	margin: 10px 0 6px;
+	text-align: left;
+	width: 105px;
+}
+
+
+/******************************************************************/
+/* about page */
+/******************************************************************/
+
+.about h1 {
+	font-family: u004042e, arial;
+	font-size:60px;
+	color:#545458;
+	margin:0 0 0 65px;
+}
+
+.about h2 {
+	font-family: u004042e, arial;
+	font-size:30px;
+	color:#545458;
+	margin:0 0 35px 0;
+}
+
+.about h3 {
+/*font-family:'HelveticaNeueW01-47LtCn 692686';*/
+	font-family:'HelveticaNeueLt', arial;
+	font-size:24px;
+	color:#545458;
+	margin: 0 0 0 122px;
+}
+
+.about #midsection p.subhead, .about #tick-bottom p.subfooter {
+	font-size:24px;
+	line-height: 24px;
+	/*font-family:'HelveticaNeueW01-67MdCn 692710';*/
+	font-family: 'HelveticaNeueMd', arial;
+	color:#545458;
+}
+
+.about #tick-bottom p.subfooter {
+	/*font-family:'HelveticaNeueW01-47LtCn 692686';*/
+	font-family: 'HelveticaNeueLt', arial;
+}
+
+
+.about #midsection {
+	/*font-family:'HelveticaNeueW01-57Cn';
+  font-family:'HelveticaNeueW01-47LtCn 692686', arial;*/
+	font-family: 'HelveticaNeueLt', arial;
+	text-align:center;
+	width:1000px;
+	float:left;
+	font-size:15px;
+	line-height: normal;
+	/*background-color:#eaedef;*/
+	padding:40px 0 0 0;
+	color:#545458;
+}
+
+.about #midsection #block1, .about #midsection #block2, .about #midsection #block3{
+	width:300px;
+	margin:50px 20px 65px 66px;
+	float:left;
+}
+
+/*.about #midsection h3, .about #midsection {
+	font-size:24px;
+	line-height: 24px;
+	font-family: u004042e, arial;
+	color:#545458;
+}*/
+
+.about #midsection p.subhead {
+	font-size:24px;
+	line-height: 24px;
+	/*font-family:'HelveticaNeueW01-67MdCn 692710';*/
+	font-family: 'HelveticaNeueLTStd', arial;
+	color:#545458;
+}
+
+
+#about-header {
+	padding:42px 0 22px 130px;
+	width:1070px;/*1000px*/
+	height:340px;
+}
+
+/*#about-header p {
+	font-size:24px;
+	line-height: 40px;
+	font-family:'HelveticaNeueW01-47LtCn 692686', arial;
+}*/
+
+#about-intro1, #about-desc1 {
+	float:left;
+	width:340px;
+	margin: 70px 0 50px 97px;
+	/*font-family:'HelveticaNeueW01-57Cn';*/
+  font-family:'HelveticaNeueLt', arial;
+	font-size:15px;
+	color:#545458;
+}
+
+#about-intro2, #about-desc2 {
+	float:right;
+	width:340px;
+	margin: 70px 107px 50px 0;
+	/*font-family:'HelveticaNeueW01-57Cn';*/
+  font-family:'HelveticaNeueLt', arial;	
+	font-size:15px;
+	color:#545458;
+}
+
+
+#about-desc1 {
+	margin:70px 0 50px 218px;
+}
+
+
+#about-desc2 {
+	margin:70px 237 50px 0;
+}
+
+
+.anchor {
+  display:none;
+}
+
+
+#tick-top {
+	margin:10px 0 0 567px;
+	width:60px;	
+}
+
+#tick-bottom {
+	margin:80px 0 90px 497px;
+	width:160px;	
+}
+
+#tick-bottom img {
+	margin:0 0 0 52px;	
+}
+
+
+.jcenter {
+	margin:0 auto;
+}
+
+.about .hoz-bar {
+	margin:5px 0 0 120px;
+}
+
+#about-desc1 img, #about-desc2 img {
+	float:left;
+}
+
+#about-desc1 div, #about-desc2 div {
+	float:right;
+	margin: 18px 66px 0 0;
+	width: 160px;
+}
+
+#about-desc1 em, #about-desc2 em {
+	margin:30px 0 0 0;
+	float:left;
+}
+
+
+
+#container {
+	margin:0 auto;
+	width:100%;
+}
+
+
+/*********************
+Contact Us
+*********************/
+
+#contact{
+	width:1000px;
+	margin:0 auto;
+}
+
+::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+
+#mc_signup_form {
+  background-color: #ccc;
+  float: left;
+}
+
+#mc_signup_form #submit {
+  background-color: #ccc;
+  float: left;
+}
+
+input[type="text"], input[type="email"], textarea {
+  background-color: #fff;
+  color: #c9ced1;
+  width: 100%;/*220*/
+	border:none;
+	/*padding:15px;*/
+	font-size:15px;
+  padding: 18px 10px 13px;
+}
+
+/*#inner-newsletter-signup form {
+   margin: 24px 0 0 20px;
+  width:200px;
+  float: right;
+}*/
+
+/*input[type="text"] {
+  float: left;
+  width: 200px;
+margin: 37px 30px 0 10px;
+  padding:12px 10px 8px
+}*/
+
+.styled-select {
+   width: 240px;
+   height: 34px;
+   overflow: hidden;
+   background: url(new_arrow.png) no-repeat right #ddd;
+   border: 1px solid #ccc;
+   }
+
+.styled-select select {
+   background: transparent;
+   width: 115%;
+   padding: 5px;
+   font-size: 16px;
+   line-height: 1;
+   border: 0;
+   border-radius: 0;
+   height: 34px;
+   -webkit-appearance: none;
+  }
+
+
+#inner-newsletter-signup input[type="text"] {
+  float: left;
+  width: 200px;
+  margin: 0;
+  padding:12px 10px 8px;
+  height:36px;
+  box-sizing: border-box;
+}
+
+.contact #inner-newsletter-signup input[type="text"] {
+  padding:10px 10px 8px
+}
+
+
+
+#mc_signup_form{
+  background-color: #545458;
+  width: 100%;
+}
+#mc_signup_submit, .mc_signup_submit {
+  float: right;
+}
+
+
+#inner-newsletter-signup form .button, .button:visited {
+    padding: 0;
+    /*height:100px;*/
+    float: right;
+    margin:0;
+}
+
+#mc_signup_form {
+    border: none;
+}
+
+#newsletter-signup .button, .button:visited {
+    background-color: #98E2BF;
+    color: #545458;
+    cursor: pointer;
+    border:none;
+    /*font-family: 'HelveticaNeueW01-57Cn';*/
+    font-family:'HelveticaNeueLt', arial;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 4px 0 0 33px;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out 0s;
+    float: left;
+    margin: 0;
+    width: 85px;
+    height: 36px;
+}
+
+#newsletter-signup  .mc-field-group {
+  float: left;
+}
+
+#mc_signup {
+  float:left;
+  margin:0;
+}
+
+
+textarea {
+	float:left;
+	width:100%;
+	display:block;
+	margin:0;
+}
+
+select {
+    margin:0;
+    padding:0;
+    outline:none;
+}
+
+
+
+div.pselect {
+    overflow:hidden; /* this hides the select's drop button */
+    padding:0; 
+    margin:0;
+    background: white url(/wp-content/themes/eddiemachado-bones-d1b3b54/library/images/down-arrow-icon.png) no-repeat bottom right;
+    /* this is the new drop button, in image form */
+    width:12em; border-radius:2px;
+    /*box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    border: solid 1px #ccc;*/
+}
+
+
+div.pselect  select {
+    width:115% /* this percentage effectively extends the drop down button out of view */;
+    background-color:transparent; /* this hides the select's background making any styling visible from the div */
+    background-image:none;
+    -webkit-appearance: none /* this is required for Webkit browsers */;
+    border:none;
+    box-shadow:none;
+    padding:0.3em 0.5em; /* padding should be added to the select, not the div */
+}
+
+
+
+
+
+
+::-moz-focus-inner {
+    border: 0;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    color: #545458;
+}
+
+.fname, .lname {
+	margin: 0 17px 20px 0;
+	width: 48%;
+	float:left;
+}
+
+.lname {
+	margin: 0 0 20px 0;
+}
+
+#sidebar {
+	float:right;
+	width:260px;
+	margin:0 60px 0 0;
+	/*font-family:'HelveticaNeueW01-57Cn';*/
+  font-family:'HelveticaNeueLt', arial;
+	font-size:15px;
+	line-height:18px;
+	
+}
+
+/* id of form plugin container */
+#wpcf7-f438-p2-o1 {
+	float:left;
+	margin:0 0 0 120px;
+	width:530px;
+	/*background-color:#ccc;*/
+}
+
+.contact #block1 {
+    margin: 0 60px 0 0;
+}
+
+.contact #block1, .contact #block2 {
+    width:305px;
+}
+
+.wpcf7-response-output {
+  font-family:'HelveticaNeueLt', arial;
+  font-size:15px;
+  line-height:18px;
+  width:70%;
+
+}
+
+
+
+.contact .header {
+	/*border-bottom: 1px solid #b4b6c0;*/
+}
+
+.contact .intro {
+	font-size:24px;
+	line-height: normal;
+	font-family:'HelveticaNeueLt', arial;
+	color:#565d5b;
+	width:620px;
+	margin:70px 0 70px 120px;
+}
+
+.contact h2 {
+	font-family: u004042e, arial, sans-serif;
+	font-size:48px;
+	color:#565d5b;
+	margin:0;
+}
+
+.contact h3 {
+	font-family:'HelveticaNeueMd', arial;
+	font-size:15px;
+	color:#565d5b;
+}
+
+.contact hr {
+	border-color:#c9ced1;
+	background-color:#c9ced1; 
+	color:#c9ced1;
+}
+
+.contact .button{
+	padding:0;
+	margin:20px 0 50px 0;
+	float:right;
+	border:none;
+	font-size:25px;
+	width:99px;
+	font-family: u004042e,arial;
+}
+
+.contact input, .contact select, .contact textarea {
+	/*font-family:'HelveticaNeueW01-57Cn';*/
+  font-family:'HelveticaNeueLt', arial;
+
+}
+
+
+/* validation */
+
+
+/* error underline */
+.wpcf7-form input.error, .wpcf7-form select.error, .wpcf7-form textarea.error {
+    border-bottom: 3px solid #5DE0B8;
+    outline: medium none;
+}
+
+/* error message */
+.wpcf7-form label.error {
+    color: #5DE0B8;
+    float: none;
+    font-size: 15px;
+}
+
+
+/******************************************************************/
+/* Legal */
+/******************************************************************/
+
+
+#homepage-header {
+		width: 100%;
+		margin:0;
+		/*background: url('http://www.nudeaudio.com/wp-content/themes/eddiemachado-bones-d1b3b54/library/images/home-main-image.png') #dfdfdf no-repeat top right;*/
+}
+
+
+#homepage-header-inner {
+    height: 672px;
+     padding: 130px 0 0;
+	    width: 100%;/*1000px*/
+	margin:0 auto;
+  background-color: #545458;
+}
+
+
+.legal .header, .support .header {
+	/*border-bottom: 1px solid #b4b6c0;*/
+}
+
+.legal, .support {
+	width:100%;
+	margin:0 auto;
+	padding:0;
+}
+
+.responsive-slider.flexslider .slides img {
+    /*margin: 0 0 0 70px;*/
+    margin: 0 auto;
+}
+
+.responsive-slider.flexslider {
+    margin: 0 3px -120px 0;
+}
+
+.flex-direction-nav, .flex-control-nav {
+    display: none;
+}
+
+
+.legal-inner, .support-inner, .about {
+	width:1000px;
+	margin:0 auto;
+	/*padding:0 0 60px 0;*/
+}
+
+.legal #content, .support #content {
+	/*margin:28px 0 0 118px;*/
+	
+}
+
+
+#legal-subnav, #support-subnav  {
+	border-top: 1px solid #b4b6c0;
+	border-bottom: 1px solid #b4b6c0;
+	color:#545458;
+	/*height:40px;*/
+	margin: 20px 0 20px 0;
+	padding: 20px 0 16px 0;
+	float:left;
+	width:88%;
+}
+
+#menu-legal-nav  ul, #menu-support-nav  ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	display:block;
+	width:100%;
+}
+
+#menu-legal-nav li, #menu-support-nav li {
+    float: left;
+    position: relative;
+}
+
+#menu-legal-nav li a, #menu-support-nav li a {
+	font-size:24px;
+	font-family:'HelveticaNeueLt', arial;
+	margin:20px 60px 20px 0;
+	text-decoration:none;
+}
+
+.legal-content, .support-content{
+	float:left;
+	/*font-family:'HelveticaNeueW01-57Cn';*/
+  font-family:'HelveticaNeueLt', arial;
+	font-size:15px;
+	margin: 25px 0 60px 0;
+    width: 88%;
+}
+.legal-content #block1, {
+  display:block;
+}
+
+.legal-content #block2, .legal-content #block3, .legal-content #block4, .support-content #block2, .support-content #block3, .support-content #block4{
+  display:none;
+}
+
+
+.legal-content h2, .support-content h2 {
+	font-family:'HelveticaNeueMd', arial;
+	font-weight:bold;
+	font-size:15px !important;
+	/*text-transform:uppercase;*/
+}
+
+.legal-content h3, .support-content h3 {
+	/*font-family:'HelveticaNeueW01-57Cn';*/
+  font-family:'HelveticaNeueLt', arial;
+	font-size:15px;
+	/*text-transform:uppercase;*/
+}
+
+.legal h2, .support h2 {
+    color: #565D5B;
+    font-family: u004042e,arial,sans-serif;
+    font-size: 48px;
+    margin: 0;
+}
+
+.legal #menu-legal-nav a:hover, .legal #menu-legal-nav a:visited:hover, .legal #menu-legal-nav a:focus, .legal #menu-legal-nav a:visited:focus,
+.support #menu-support-nav a:hover, .support #menu-support-nav a:visited:hover, .support #menu-support-nav a:focus, .support #menu-support-nav a:visited:focus {
+	/*font-weight:700;*/
+	text-align:left;
+}
+
+.legal #menu-legal-nav.menu .menu-item a, .support #menu-support-nav.menu .menu-item a {
+  cursor:pointer;
+}
+
+.homepagebgd #midsection-inner #block1 h3 {
+  line-height: normal;
+
+
+}
+
+
+
+
+/*********************
+BUTTONS
+*********************/
+
+/******************************************************************/
+/* Buttons */
+/******************************************************************/
+
+.button,
+.button:visited {
+  padding:4px 12px;
+  color:#545458;
+  font-size:18px;
+  line-height:18px;
+  text-decoration:none;
+  cursor:pointer;
+  padding:14px 0 0 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color:#98e2bf;
+  /*font-family: 'HelveticaNeueW01-57Cn';*/
+  font-family:'HelveticaNeueLt', arial;
+  /*color:#545458;*/
+  padding: 15px 0 0 33px;
+}
+.button:hover,
+.button:visited:hover,
+.button:focus,
+.button:visited:focus {
+  color:#EF4A5D;
+  background-color:#545458;
+}
+.button:active,
+.button:visited:active {
+  background-color:#dfdfdf;
+}
+.blue-button,
+.blue-button:visited {
+  background-color:#1681c4;
+}
+.blue-button:hover,
+.blue-button:visited:hover,
+.blue-button:focus,
+.blue-button:visited:focus {
+  border-color:#116396;
+  background-color: #1472ad;
+}
+.blue-button:active,
+.blue-button:visited:active {
+  background-color: #1990db;
+}
+/*
+BASE (MOBILE) SIZE
+This are the mobile styles. It's what people see on their phones. If
+you set a great foundation, you won't need to add too many styles in
+the other stylesheets. Remember, keep it light: Speed is Important.
+*/
+/******************************************************************
+Site Name: NudeAudio
+Author: JJ MarketingStylesheet: Base Mobile Stylesheet
+
+Be light and don't over style since everything here will be
+loaded by mobile devices. You want to keep it as minimal as
+possible. This is called at the top of the main stylsheet
+and will be used across all viewports.
+
+------------ MAP ------------
+
+01. GENERAL STYLES
+02. WORDPRESS BODY CLASSES
+03. LAYOUT & GRID STYLES
+04. LINK STYLES
+05. H1, H2, H3, H4, H5 STYLES
+06. HEADER STYLES
+07. NAVIGATION STYLES
+08. POSTS & CONTENT STYLES
+09. PAGE NAVI STYLES
+10. COMMENT STYLES
+11. COMMENT FORM STYLES
+12. SIDEBARS & ASIDES
+13. FOOTER STYLES
+
+******************************************************************/
+/*********************
+01. GENERAL STYLES
+*********************/
+
+
+
+/* first for IE 4â€“8 */
+@font-face {
+  font-family: u004042e;
+  src: url("../fonts/u004042eWeb.eot");
+}
+
+/* then for WOFF-capable browsers */
+@font-face {
+  font-family: u004042e;
+  src: url("../fonts/u004042eWeb.woff") format("woff");
+}
+
+
+/* Helvetica Neue 47 Light Condensed */
+/* font-family:'HelveticaNeueW01-47LtCn 692686'; */
+
+/* Helvetica Neue 67 Medium Condensed */
+/* font-family:'HelveticaNeueW01-67MdCn 692710'; */
+
+
+html,
+body {
+  /* height: 100%; */
+
+}
+body {
+  font-family: u004042e, arial, sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+  color: #565656;
+}
+
+#emailshowme{
+  display:none;
+
+}
+
+#mobile {
+  display:none;
+}
+
+/* Mobile 400px */
+/*@media only screen and (max-width: 481px) {*/
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) { 
+/* Styles */
+
+#mobile {
+  display: block;
+  text-align: center;
+  margin-top: 100px;
+}
+
+#mobile h1 {
+  text-transform: uppercase;
+  font-size:15px;
+}
+/*
+body {
+  overflow: hidden;
+}*/
+
+
+#emailhideme{
+  display:none;
+}
+
+#emailshowme{
+  position: absolute;
+  width:300px; 
+  height:300px;
+  left:-150px;
+  top:-150px;
+  display:block;
+  background-color: hsl(204, 14%, 93%);
+  height: 100px;
+  margin: 0 auto;
+  float: left;
+  border:1px solid #000;
+}
+
+#logo {
+  margin:0 auto;
+  background: url("http://www.nudeaudio.com/wp-content/themes/eddiemachado-bones-d1b3b54/library/images/logo-main.png") no-repeat scroll right top transparent;
+  width:142px;
+  height:25px;
+} 
+
+}
+
+
+/*********************
+Gallery
+*********************/
+
+.about hr {
+    border-top: 1px solid #959595;
+	width:100%;
+	text-align:center;
+	float:left;
+}
+.about hr.extended {
+	margin:30px 0 100px 0;
+}
+
+.gallery {
+	width:1000px;
+	margin:0 auto;
+	padding:0 0 60px 0;
+}
+
+.gallery .entry-content img {
+	float:left;
+	margin:20px 30px 60px 0;
+	display:block;
+}
+
+.gallery div {
+	float:left;
+	width:100%;
+	vertical-align:top;
+}
+
+.gallery h2 {
+	color: #565D5B;
+    font-family: u004042e,arial,sans-serif;
+    font-size: 48px;
+}
+
+.gallery h3 {
+	/*font-family:'HelveticaNeueW01-57Cn';*/
+  font-family:'HelveticaNeueLt', arial;
+	font-size:24px;
+	/*text-transform:uppercase;*/
+}
+
+.gallery .header {
+    border-bottom: 1px solid #B4B6C0;
+}
+
+.gallery #main {
+    /*margin: 120px 0 60px 118px;*/
+    width: 1061px;
+    margin: 20px 0 60px;
+}
+
+.gallery section {
+	margin:0 0 90px 0;
+}
+
+.gallery hr {
+	border-top: 1px solid #959595;
+}
+
+
+/******************************************************************/
+/* email confirmation */
+/******************************************************************/
+
+.basic {
+  /*width: 500px !important;*/
+  /*float: left;*/
+  margin: 0 auto;
+  min-height: 800px;
+  width: 1000px;
+}
+
+.basic p {
+  /*font-family:'HelveticaNeueW01-57Cn', arial;*/
+  font-family:'HelveticaNeueLt', arial;
+Â Â font-size:Â 15px;
+}
+
+#basic-inner {
+    margin: 60px 0 0 116px;
+}
+
+#basic-inner h2 {
+    color: #565D5B;
+    font-family: u004042e,arial,sans-serif;
+    font-size: 48px;
+}
+
+#mc_embed_signup {
+  float: right;
+  width: 350px;
+  /*background-color: #ccc;*/
+}
+
+.mc_form_inside {
+  width:100%;
+}
+
+
+/*********************
+Press Releases
+*********************/
+
+#pressrelease-side {
+	width:300px;
+	/*background-color:#ccc;*/
+	float:left;
+	margin:0 0 40px 115px;
+	font-size:15px;
+	line-height:normal;
+	/*font-family:'HelveticaNeueW01-57Cn', arial;*/
+  font-family:'HelveticaNeueLt', arial;
+}
+
+#pressrelease-side a {
+	color:#5de0b8;
+	text-decoration:none;
+}
+
+#press-offices {
+	width:100%;
+	backgound-color:#ccc;
+	float:left;
+}
+
+#twitter {
+float:left;
+margin:20px 0 20px 0;
+border-top: 1px solid #c9ced1;
+border-bottom: 1px solid #c9ced1;
+width:300px;
+padding:20px 0 20px 0;
+}
+
+#twitter img {
+	margin:0 14px 0 0;
+	float:left;
+}
+
+#twitter p {
+	float:left;
+	margin:4px 0 0 0;
+	color:#5de0b8;
+}
+
+#media-library {
+	float:left;
+}
+
+.presspage #pressrelease-main #prelease h2 {
+	margin:0 0 0 0;
+}
+
+.presspage {
+	width:1000px !important;
+	margin:0 auto;
+}
+
+#press-mobile{
+	display:block;
+	width:500px;
+	height:400px;
+	background-color:#ccc;
+	float:left;
+}
+
+.press h1 {
+	font-family: u004042e, arial;
+	color:#545458;
+	font-size:60px;
+}
+
+.press h2 {
+	font-family:'HelveticaNeueLt', arial;
+	color:#545458;
+	font-size:24px;
+}
+
+.press h3 {
+	font-family: u004042e, arial;
+	color:#545458;
+	font-size:30px;
+	margin:10px 0 0 0;
+}
+
+.press h4 {
+	/*font-family:'HelveticaNeueW01-67MdCn 692710', arial;*/
+	color:#545458;
+	font-size:15px;
+	font-weight:bold;
+	margin:34px 0 0 0;
+}
+
+.press .header, .legal .header, .support .header {
+	/*border-bottom: 1px solid #b4b6c0;*/
+}
+
+.press #press-offices p {
+	margin:0;
+	
+}
+
+#pressrelease-main {
+	/*background-color:#ccc;*/
+	float:right;
+	/*font-family:'HelveticaNeueW01-57Cn';*/
+  font-family:'HelveticaNeueLt', arial;
+	width:718px;
+	margin:0 37px 0 30px;
+}
+
+#pressrelease-about {
+	/*background-color:#cc3333;*/
+	float:right;
+	/*font-family:'HelveticaNeueW01-57Cn', arial;*/
+  font-family:'HelveticaNeueLt', arial;
+	line-height:normal;
+	border-top: 1px solid #b4b6c0;
+	font-size:15px;
+	margin: 10px 0 50px;
+    padding: 0 10px 0 0;
+    width: 100%;
+}
+
+#pressrelease-about h4, #pressrelease-about p {
+	margin: 34px 0 0 444px;
+}
+
+
+
+#prelease h2 {
+	font-size:60px;
+	font-family: u004042e, arial;
+}
+
+#prelease h2 h2 {
+	font-size:24px;
+	font-family: u004042e, arial;
+}
+
+#prelease hr {
+	margin:20px 0 20px 0;
+}
+
+#prelease * {
+	font-size:18px;
+	/*font-family:'HelveticaNeueW01-57Cn', arial;*/
+  font-family:'HelveticaNeueLt', arial;
+}
+
+#prelease code a {
+	color:#5de0b8;
+}
+
+#prelease hr {
+	border-top: 1px solid #C9CED1;	
+}
+
+
+/*********************
+Support
+*********************/
+
+
+.support-content{
+}
+
+.support h3 {
+    font-size: 18px;
+	margin:0 0 10px 0;
+}
+
+.support h4 {
+    font-size: 18px;
+	margin:0 0 10px 0;
+}
+
+#support-left {
+	float:left;
+	width:60%;
+}
+
+#support-right {
+	float:right;
+	width:30%;
+}
+
+.support .button {
+	float:left;
+}
+
+
+
+
+
+/********************
+02. WORDPRESS BODY CLASSES
+    style a page via class
+********************/
+/* for sites that are read right to left (i.e. hebrew) */
+/* home page */
+/* blog template page */
+/* archive page */
+/* date archive page */
+/* replace the number to the corresponding page number */
+/* search page */
+/* search result page */
+/* no results search page */
+/* individual paged search (i.e. body.search-paged-3) */
+/* 404 page */
+/* single post page */
+/* individual post page by id (i.e. body.postid-73) */
+/* individual paged single (i.e. body.single-paged-3) */
+/* attatchment page */
+/* individual attatchment page (i.e. body.attachmentid-763) */
+/* style mime type pages */
+/* author page */
+/* user nicename (i.e. body.author-samueladams) */
+/* paged author archives (i.e. body.author-paged-4) for page 4 */
+/* category page */
+/* individual category page (i.e. body.category-6) */
+/* replace the number to the corresponding page number */
+/* tag page */
+/* individual tag page (i.e. body.tag-news) */
+/* replace the number to the corresponding page number */
+/* custom page template page */
+/* individual page template (i.e. body.page-template-contact-php */
+/* replace the number to the corresponding page number */
+/* parent page template */
+/* child page template */
+/* replace the number to the corresponding page number */
+/* if user is logged in */
+/* paged items like search results or archives */
+/* individual paged (i.e. body.paged-3) */
+/*********************
+03. LAYOUT & GRID STYLES
+*********************/
+.wrap {
+  width: 100%;
+  /*margin: 0 auto;*/
+}
+/*********************
+04. LINK STYLES
+*********************/
+a,
+a:visited {
+  color: #889aa4;
+  text-decoration:none;
+  /* on hover */
+
+  /* on click */
+
+  /* mobile tap color */
+
+}
+a:hover,
+a:visited:hover,
+a:focus,
+a:visited:focus {
+  color: #545458;
+}
+a:link,
+a:visited:link {
+  /*
+		this highlights links on iPhones/iPads.
+		so it basically works like the :hover selector
+		for mobile devices.
+		*/
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
+}
+/******************************************************************
+05. H1, H2, H3, H4, H5 STYLES
+******************************************************************/
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5 {
+  /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  text-rendering: optimizelegibility;
+  font-weight: 400;
+  /*
+	if you're going to use webfonts, be sure to check your weights
+	http://css-tricks.com/watch-your-font-weight/
+	*/
+
+  /* removing text decoration from all headline links */
+
+}
+h1 a,
+.h1 a,
+h2 a,
+.h2 a,
+h3 a,
+.h3 a,
+h4 a,
+.h4 a,
+h5 a,
+.h5 a {
+  text-decoration: none;
+}
+h1,
+.h1 {
+  font-size: 2.5em;
+  line-height: 1.333em;
+}
+h2,
+.h2 {
+  font-size: 1.75em;
+  line-height: 1.4em;
+  margin-bottom: 0.375em;
+}
+h3,
+.h3 {
+  font-size: 1.125em;
+}
+h4,
+.h4 {
+  font-size: 1.1em;
+  font-weight: 700;
+}
+h5,
+.h5 {
+  font-size: 0.846em;
+  line-height: 2.09em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+/*********************
+06. HEADER SYTLES
+*********************/
+/*********************
+07. NAVIGATION STYLES
+*********************/
+/*
+all navs have a .nav class applied via
+the wp_menu function; this is so we can
+easily write one group of styles for
+the navs on the site so our css is cleaner
+and more scalable.
+*/
+.nav {
+  /* border: 1px solid #ccc;*/
+  /* border-bottom: 0;*/
+  /* end .menu li */
+
+  /* highlight current page */
+
+  /* end current highlighters */
+
+}
+.nav li {
+  /*
+		so you really have to rethink your dropdowns for mobile.
+		you don't want to have it expand too much because the
+		screen is so small. How you manage your menu should
+		depend on the project. Here's some great info on it:
+		http://www.alistapart.com/articles/organizing-mobile/
+		*/
+
+}
+.nav li a {
+  display: block;
+  text-decoration: none;
+  font-family: u004042e, arial;
+  color:#8c9194;
+  font-size:20px;
+  /*padding: 10px 10px;
+  background-color: #eee;
+  border-bottom: 1px solid #ccc;*/
+  margin:0 70px 0 0;
+  /*
+			remember this is for mobile ONLY, so there's no need
+			to even declare hover styles here, you can do it in
+			the style.scss file where it's relevant. We want to
+			keep this file as small as possible!
+			*/
+
+}
+.nav li ul.sub-menu li a,
+.nav li ul.children li a {
+  padding-left: 30px;
+}
+
+
+
+
+
+
+
+
+
+/* end .nav */
+/*********************
+08. POSTS & CONTENT STYLES
+*********************/
+#content {
+  /*margin-top: 0;*/
+}
+/* end .hentry */
+/* want to style individual post classes? Booya! */
+/* post by id (i.e. post-3) */
+/* general post style */
+/* general article on a page style */
+/* general style on an attatchment */
+/* sticky post style */
+/* hentry class */
+/* style by category (i.e. category-videos) */
+/* style by tag (i.e. tag-news) */
+/* post meta */
+.byline {
+  color: #999;
+}
+/* entry content */
+.entry-content {
+  /*
+			image alignment on a screen this size may be
+			a bit difficult. It's set to start aligning
+			and floating images at the next breakpoint,
+			but it's up to you. Feel free to change it up.
+			*/
+
+}
+.entry-content dd {
+  margin-left: 0;
+  font-size: 0.9em;
+  color: #787878;
+  margin-bottom: 1.5em;
+}
+.entry-content img {
+  /*margin: 0 0 1.5em 0;*/
+  max-width: 100%;
+  height: auto;
+}
+.entry-content video,
+.entry-content object {
+  max-width: 100%;
+  height: auto;
+}
+.entry-content pre {
+  background: #eee;
+  border: 1px solid #cecece;
+  padding: 10px;
+}
+/* end .entry-content */
+.wp-caption {
+  max-width: 100%;
+  background: #eee;
+  padding: 5px;
+  /* images inside wp-caption */
+
+}
+.wp-caption img {
+  max-width: 100%;
+  margin-bottom: 0;
+  width: 100%;
+}
+.wp-caption p.wp-caption-text {
+  font-size: 0.85em;
+  margin: 4px 0 7px;
+  text-align: center;
+}
+/* end .wp-caption */
+/* image gallery styles */
+/* end .gallery */
+/* gallery caption styles */
+/******************************************************************
+09. PAGE NAVI STYLES
+******************************************************************/
+.page-navigation,
+.wp-prev-next {
+  margin: 1.1em 0 2.2em;
+}
+.bones_page_navi {
+  /* current page link */
+
+  /* end .bones_page_navi .bpn-current */
+
+  /* common styles for page-navi links */
+
+  /* remove the bg on end links */
+
+  /* previous link */
+
+  /* next page link */
+
+  /* first page link */
+
+  /* last page link */
+
+}
+.bones_page_navi li {
+  float: left;
+  margin-left: 10px;
+}
+.bones_page_navi li a {
+  padding: 3px 6px;
+  display: block;
+  text-decoration: none;
+  position: relative;
+}
+.bones_page_navi li a:hover,
+.bones_page_navi li a:focus {
+  color: #f01d4f;
+  text-decoration: underline;
+}
+.bones_page_navi li.bpn-current {
+  padding: 3px 6px;
+  border-bottom: 2px solid #f01d4f;
+  position: relative;
+}
+.bones_page_navi li.bpn-current a {
+  /* hovering on current page link */
+
+}
+.bones_page_navi li.bpn-prev-link,
+.bones_page_navi li.bpn-next-link {
+  font-weight: 700;
+}
+.bones_page_navi li.bpn-prev-link a,
+.bones_page_navi li.bpn-next-link a {
+  padding: 0;
+}
+.bones_page_navi li.bpn-prev-link a:hover,
+.bones_page_navi li.bpn-next-link a:hover,
+.bones_page_navi li.bpn-first-page-link a:hover,
+.bones_page_navi li.bpn-last-page-link a:hover {
+  background: none;
+}
+/* end .bones_page_navi */
+/* fallback previous & next links */
+.wp-prev-next .prev-link {
+  float: left;
+}
+.wp-prev-next .next-link {
+  float: right;
+}
+/* end .wp-prev-next */
+/******************************************************************
+10. COMMENT STYLES
+******************************************************************/
+/* h3 comment title */
+#comments {
+  /* number of comments span */
+
+}
+.commentlist {
+  /* general comment classes */
+
+  /* vcard */
+
+  /* end .commentlist .vcard */
+
+  /* comment meta */
+
+  /* comment content */
+
+  /* end .commentlist .comment_content */
+
+  /* comment reply link */
+
+  /* end .commentlist .comment-reply-link */
+
+}
+.commentlist li {
+  position: relative;
+  clear: both;
+  overflow: hidden;
+  list-style-type: none;
+  margin-bottom: 1.5em;
+  padding: 0.7335em 10px;
+  /* end .commentlist li ul.children */
+
+}
+.commentlist li:last-child {
+  margin-bottom: 0;
+}
+.commentlist li ul.children {
+  margin: 0;
+  /* variations */
+
+  /* change number for different depth */
+
+}
+.commentlist li[class*=depth-] {
+  margin-top: 1.1em;
+}
+.commentlist li.depth-1 {
+  margin-left: 0;
+  margin-top: 0;
+}
+.commentlist li:not(.depth-1) {
+  margin-right: -10px;
+  margin-left: -10px;
+  margin-top: 0;
+  padding-bottom: 0;
+}
+.commentlist .odd {
+  background: #eee;
+}
+.commentlist .even {
+  background: #fefefe;
+}
+.commentlist .vcard {
+  margin-left: 50px;
+}
+.commentlist .vcard cite.fn {
+  font-weight: 700;
+  font-style: normal;
+}
+.commentlist .vcard time {
+  float: right;
+}
+.commentlist .vcard time a {
+  color: #999;
+  text-decoration: none;
+}
+.commentlist .vcard time a:hover {
+  text-decoration: underline;
+}
+.commentlist .vcard img.avatar {
+  position: absolute;
+  left: 10px;
+  padding: 2px;
+  border: 1px solid #cecece;
+  background: #fff;
+}
+.commentlist .comment_content {
+  margin-left: 50px;
+}
+.commentlist .comment_content p {
+  margin: 0.7335em 0 1.5em;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+.commentlist .comment-reply-link {
+  text-decoration: none;
+  float: right;
+  background: #4598bb;
+  padding: 3px 5px;
+  color: #fff;
+  opacity: 0.65;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 0.9em;
+}
+.commentlist .comment-reply-link:hover,
+.commentlist .comment-reply-link:focus {
+  opacity: 1;
+}
+/* end .commentlist */
+/******************************************************************
+11. COMMENT FORM STYLES
+******************************************************************/
+.respond-form {
+  margin: 1.5em 10px;
+  padding-bottom: 2.2em;
+}
+.respond-form form {
+  margin: 0.75em 0;
+}
+.respond-form form li {
+  list-style-type: none;
+  clear: both;
+  margin-bottom: 0.7335em;
+}
+.respond-form form li label,
+.respond-form form li small {
+  display: none;
+}
+.respond-form form input[type=text],
+.respond-form form input[type=email],
+.respond-form form input[type=url],
+.respond-form form textarea {
+  padding: 3px 6px;
+  background: #efefef;
+  border: 2px solid #cecece;
+  line-height: 1.5em;
+  /* form validation */
+
+}
+.respond-form form input[type=text]:focus,
+.respond-form form input[type=email]:focus,
+.respond-form form input[type=url]:focus,
+.respond-form form textarea:focus {
+  background: #fff;
+}
+.respond-form form input[type=text]:invalid,
+.respond-form form input[type=email]:invalid,
+.respond-form form input[type=url]:invalid,
+.respond-form form textarea:invalid {
+  outline: none;
+  border-color: #fbc2c4;
+  background-color: #f6e7eb;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  box-shadow: none;
+}
+.respond-form form input[type=text],
+.respond-form form input[type=email],
+.respond-form form input[type=url] {
+  max-width: 400px;
+  min-width: 250px;
+}
+.respond-form form textarea {
+  resize: none;
+  width: 97.3%;
+  height: 150px;
+}
+/* comment submit button */
+/* comment form title */
+#comment-form-title {
+  margin: 0 0 1.1em;
+}
+/* cancel comment reply link */
+/* logged in comments */
+/* allowed tags */
+#allowed_tags {
+  margin: 1.5em 10px 0.7335em 0;
+}
+/* no comments */
+.nocomments {
+  margin: 0 20px 1.1em;
+}
+/*********************
+12. SIDEBARS & ASIDES
+*********************/
+.widget ul li {
+  /* deep nesting */
+
+}
+/*********************
+13. FOOTER STYLES
+*********************/
+.footer {
+  clear: both;
+}
+/*
+	if you checked out the link above:
+	http://www.alistapart.com/articles/organizing-mobile/
+	you'll want to style the footer nav
+	a bit more in-depth. Remember to keep
+	it simple because you'll have to
+	override these styles for the desktop
+	view.
+	*/
+/* end .footer-links */
+/*
+LARGER MOBILE DEVICES
+This is for devices like the Galaxy Note or something that's
+larger than an iPhone but smaller than a tablet. Let's call them
+tweeners.
+*/
+@media only screen and (min-width: 481px) {
+  /******************************************************************
+  Site Name: NudeAudio
+Author: JJ MarketingStylesheet: 481px and Up Stylesheet
+  
+  This stylesheet is loaded for larger devices. It's set to 
+  481px because at 480px it would load on a landscaped iPhone.
+  This isn't ideal because then you would be loading all those
+  extra styles on that same mobile connection. 
+  
+  A word of warning. This size COULD be a larger mobile device,
+  so you still want to keep it pretty light and simply expand
+  upon your base.less styles.
+  
+  ******************************************************************/
+  /*********************
+  NAVIGATION STYLES
+  *********************/
+  /* .menu is clearfixed inside mixins.scss */
+  .menu {
+    /* end .menu ul */
+  
+  }
+  .menu ul {
+    /* end .menu ul li */
+  
+    /* highlight current page */
+  
+    /* end current highlighters */
+  
+  }
+  .menu ul li {
+    /*
+  				plan your menus and drop-downs wisely.
+  				*/
+  
+  }
+  .menu ul li a {
+    /*
+  					you can use hover styles here even though this size
+  					has the possibility of being a mobile device.
+  					*/
+  
+  }
+  /* end .menu */
+  /*********************
+  POSTS & CONTENT STYLES
+  *********************/
+  /* entry content */
+  .entry-content {
+    /* at this larger size, we can start to align images */
+  
+  }
+  .entry-content .alignleft,
+  .entry-content img.alignleft {
+    margin-right: 1.5em;
+    display: inline;
+    float: left;
+  }
+  .entry-content .alignright,
+  .entry-content img.alignright {
+    margin-left: 1.5em;
+    display: inline;
+    float: right;
+  }
+  .entry-content .aligncenter,
+  .entry-content img.aligncenter {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    clear: both;
+  }
+  /* end .entry-content */
+  /*********************
+  FOOTER STYLES
+  *********************/
+  /*
+  check your menus here. do they look good?
+  do they need tweaking?
+  */
+  /* end .footer-links */
+}
+/*
+TABLET & SMALLER LAPTOPS
+This is the average viewing window. So Desktops, Laptops, and
+in general anyone not viewing on a mobile device. Here's where
+you can add resource intensive styles.
+*/
+@media only screen and (min-width: 768px) {
+  /******************************************************************
+  Site Name: NudeAudio
+Author: JJ MarketingStylesheet: Grid Stylesheet
+  
+  I've seperated the grid so you can swap it out easily. It's
+  called at the top the style.less stylesheet.
+  
+  There are a ton of grid solutions out there. You should definitely
+  experiment with your own. Here are some recommendations:
+  
+  http://gridsetapp.com - Love this site. Responsive Grids made easy.
+  http://gridpak.com/ - Create your own responsive grid.
+  
+  The grid below is a combination of the 1140 grid and Twitter Boostrap. 
+  I liked 1140 but Boostrap's grid was way more detailed so I merged them 
+  together, let's see how this works out. If you want to use 1140, the original 
+  values are commented out on each line.
+  
+  ******************************************************************/
+  .onecol {
+    width: 5.801104972%;
+  }
+  /* 4.85%;  } /* grid_1  */
+  .twocol {
+    width: 14.364640883%;
+  }
+  /* 13.45%; } /* grid_2  */
+  .threecol {
+    width: 22.928176794%;
+  }
+  /* 22.05%; } /* grid_3  */
+  .fourcol {
+    width: 31.491712705%;
+  }
+  /* 30.75%; } /* grid_4  */
+  .fivecol {
+    width: 40.055248616%;
+  }
+  /* 39.45%; } /* grid_5  */
+  .sixcol {
+    width: 48.618784527%;
+  }
+  /* 48%;    } /* grid_6  */
+  .sevencol {
+   /* width: 57.182320438000005%; */
+  }
+  /* 56.75%; } /* grid_7  */
+  .eightcol {
+    width: 65.74585634900001%;
+  }
+  /* 65.4%;  } /* grid_8  */
+  .ninecol {
+    width: 74.30939226%;
+  }
+  /* 74.05%; } /* grid_9  */
+  .tencol {
+    width: 82.87292817100001%;
+  }
+  /* 82.7%;  } /* grid_10 */
+  .elevencol {
+    width: 91.436464082%;
+  }
+  /* 91.35%; } /* grid_11 */
+  .twelvecol {
+    width: 99.999999993%;
+  }
+  /* 100%;   } /* grid_12 */
+  .onecol,
+  .twocol,
+  .threecol,
+  .fourcol,
+  .fivecol,
+  .sixcol,
+  .sevencol,
+  .eightcol,
+  .ninecol,
+  .tencol,
+  .elevencol,
+  .twelvecol {
+    position: relative;
+    /*float: left;*/
+    margin-left: 2.762430939%;
+  }
+  .first {
+    margin-left: 0;
+  }
+  .last {
+    float: right;
+  }
+  /******************************************************************
+  Site Name: NudeAudio
+Author: JJ MarketingStylesheet: Tablet & Small Desktop Stylesheet
+  
+  Here's where you can start getting into the good stuff.
+  This size will work on iPads, other tablets, and desktops.
+  So you can start working with more styles, background images,
+  and other resources. You'll also notice the grid starts to
+  come into play. Have fun!
+  
+  ******************************************************************/
+  /*********************
+  GENERAL STYLES
+  *********************/
+  /*********************
+  LAYOUT & GRID STYLES
+  *********************/
+  .wrap {
+    max-width: 100%;
+  }
+  /*********************
+  HEADER SYTLES
+  *********************/
+
+  /*********************
+  SIDEBARS & ASIDES
+  *********************/
+  .sidebar {
+    margin-top: 2.2em;
+  }
+  .widgettitle {
+    border-bottom: 2px solid #444;
+    margin-bottom: 0.75em;
+  }
+  .widget {
+    padding: 0;
+    margin:  0;
+  }
+  .widget ul li {
+    margin-bottom: 0.75em;
+    /* deep nesting */
+  
+  }
+  .widget ul li ul {
+    margin-top: 0.75em;
+    padding-left: 1em;
+  }
+  /* links widget */
+  /* meta widget */
+  /* pages widget */
+  /* recent-posts widget */
+  /* archives widget */
+  /* tag-cloud widget */
+  /* calendar widget */
+  /* category widget */
+  /* recent-comments widget */
+  /* search widget */
+  /* text widget */
+  /*********************
+  FOOTER STYLES
+  *********************/
+  /*
+  you'll probably need to do quite a bit
+  of overriding here if you styled them for
+  mobile. Make sure to double check these!
+  */
+  .footer-links ul li {
+    /*
+  			be careful with the depth of your menus.
+  			it's very rare to have multi-depth menus in
+  			the footer.
+  			*/
+  
+  }
+  /* end .footer-links */
+}
+/*
+DESKTOP
+This is the average viewing window. So Desktops, Laptops, and
+in general anyone not viewing on a mobile device. Here's where
+you can add resource intensive styles.
+*/
+@media only screen and (min-width: 1030px) {
+  /******************************************************************
+  Site Name: NudeAudio
+Author: JJ MarketingStylesheet: Desktop Stylsheet
+  
+  This is the desktop size. It's larger than an iPad so it will only
+  be seen on the Desktop. 
+  
+  ******************************************************************/
+}
+/*
+LARGE VIEWING SIZE
+This is for the larger monitors and possibly full screen viewers.
+*/
+@media only screen and (min-width: 1000px) {
+  /******************************************************************
+  Site Name: NudeAudio
+Author: JJ MarketingStylesheet: Super Large Monitor Stylesheet
+  
+  You can add some advanced styles here if you like. This kicks in
+  on larger screens.*/
+  
+  
+ .overviewbgd .product #midsection #block4 .product-image {
+	width: 394px;
+}
+
+  
+  ******************************************************************/
+}
+/*
+RETINA (2x RESOLUTION DEVICES)
+This applies to the retina iPhone (4s) and iPad (2,3) along with
+other displays with a 2x resolution. You can also create a media
+query for retina AND a certain size if you want. Go Nuts.
+*/
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /******************************************************************
+  Site Name: NudeAudio
+Author: JJ MarketingStylesheet: Retina Screens & Devices Stylesheet
+  
+  When handling retina screens you need to make adjustments, especially
+  if you're not using font icons. Here you can add them in one neat
+  place.
+  
+  ******************************************************************/
+  /* 
+  
+  EXAMPLE 
+  Let's say you have an image and you need to make sure it looks ok
+  on retina screens. Let's say we have an icon which dimension are
+  24px x 24px. In your regular stylesheets, it would look something
+  like this:
+  
+  .icon {
+  	width: 24px;
+  	height: 24px;
+  	background: url(img/test.png) no-repeat;
+  }
+  
+  For retina screens, we have to make some adjustments, so that image
+  doesn't look blurry. So, taking into account the image above and the
+  dimensions, this is what we would put in our retina stylesheet:
+  
+  .icon {
+  	background: url(img/test@2x.png) no-repeat;
+  	background-size: 24px 24px;
+  }
+  
+  So, you would create the same icon, but at double the resolution, meaning 
+  it would be 48px x 48px. You'd name it the same, but with a @2x at the end
+  (this is pretty standard practice). Set the background image so it matches
+  the original dimensions and you are good to go. 
+  
+  */
+}
+/*
+iPHONE 5 MEDIA QUERY
+Want to get fancy for no good reason? Knock yourself out.
+*/
+@media (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  
+}
+/*
+PRINT STYLESHEET
+Feel free to customize this. Remember to add things that won't make
+sense to print at the bottom. Things like nav, ads, and forms should
+be set to display none.
+*/
+@@media screen {
+	
+} print {
+  /******************************************************************
+  Site Name: NudeAudio
+Author: JJ MarketingStylesheet: Print Stylesheet
+  
+  This is the print stylesheet. There's probably not a lot
+  of reasons to edit this stylesheet. If you want to
+  though, go for it.
+  
+  ******************************************************************/
+  * {
+    background: transparent !important;
+    color: black !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important;
+  }
+  a,
+  a:visited {
+    color: #444 !important;
+    text-decoration: underline;
+  }
+  a:after,
+  a:visited:after {
+    content: " (" attr(href) ")";
+  }
+  a abbr[title]:after,
+  a:visited abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  @page  {
+    margin: 0.5cm;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+  .sidebar,
+  .page-navigation,
+  .wp-prev-next,
+  .respond-form,
+  /*nav {
+    /*display: none;*/
+  /*}
+}
+
+
+
+
+/*#highlight1 {
+	background-color:#98e2bf;
+	width:121px;
+	height:5px;
+	position:relative;
+	top: 80px;
+	left: 470px;
+	display:block;
+}
+
+#highlight2 {
+	background-color:#d1eae1;
+	width:124px;
+	height:5px;
+	position:relative;
+	top: 80px;
+	left: 660px;
+	display:block;
+}
+
+.highlightON_white {
+	background-color:#98e2bf;
+}
+
+.highlightON_grey {
+	background-color:#98e2bf;
+}*/
+
+
+/* styling highlight effect bar */
+
+.hiblock {
+	position:relative;
+	top: 80px;
+	/*display:block;*/
+	height:5px;
+}
+
+.hicolor {
+	background-color:#98e2bf;	
+}
+
+.highlight-block-highlight-partner {
+	background-color:#98e2bf;
+	opacity:0.5;
+}
+
+#highlight-block1 {
+	width:121px;
+	left: 175px;
+	display:none;
+	float:left;
+}
+
+#highlight-block2 {
+	width:64px;
+	left: 175px;
+	display:none;
+	float:left;
+}
+
+#highlight-block3 {
+	width:124px;
+	left: 175px;
+	display:none;
+	float:left;
+}
+
+#highlight-block4 {
+	width:154px;
+	left: 175px;
+	display:none;
+	float:left;
+}
+
+#highlight-block5 {
+	width:62px;
+	left: 175px;
+	display:none;
+	float:left;
+}
+
+}
+
+/*********************
+Mobile poups
+*********************/
+
+#social-nav {
+	background-color:#ccc;
+	z-index:999;
+	position:absolute;
+	display: block;
+	top:300px;
+	left:300px;
+	width:223px;
+	height:61px;
+	background: url(/images/social-panel.png) no-repeat top right;
+}
+#menu-nav {
+    background-color: #FF0000;
+    display: none;
+    height: 200px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 150px;
+    z-index: 10;
+}
+
+
+.bg-grey {
+  background: #eaedef !important;
+}
+
+
+
+
+
+/*********************
+Slider
+*********************/
+
+#slider {
+  /*background-color:#eaedef;*/
+  width:100%;
+  float:left;
+}
+
+#slider-inner {
+  width:1000px;
+  height:815px;
+  background: #d7dbe0 url(../images/Product_slider_1.jpg) no-repeat top left;
+  /*float:left;*/
+  margin:0 auto;
+}
+
+#colorswitch {
+  width:100px;
+  height:50px;
+  float:left;
+  margin: 0 0 0 200px;
+}
+
+
+.responsive-slider.flexslider .slide .slide-title {
+  /*display:none;*/
+}
+
+.responsive-slider.flexslider .slide-title a {
+  background:none;
+  font-family:'HelveticaNeueLt', arial;
+  color:#98E2BF;
+  position:relative;
+  /*margin:500px;*/
+}
+
+
+
+h2.slide-title {
+  width: 960px;
+  margin:0 auto !important;
+  text-align: center;
+}
+
+h2.slide-title a {
+  position: relative;
+  top:-47px !important;
+}
+
+.responsive-slider.flexslider .slide-title a:hover {
+  background:none;
+  color:#98E2BF;
+}
+
+#colorswitch #white {
+  width:35px;
+  height:35px;
+  background: url(http://www.nudeaudio.com/wp-content/themes/eddiemachado-bones-d1b3b54/library/images/Product_slider_color_green.png) no-repeat;
+  float:left;
+  margin:0 8px 0 0;
+}
+
+#colorswitch #grey {
+  width:35px;
+  height:35px;
+  background: url(http://www.nudeaudio.com/wp-content/themes/eddiemachado-bones-d1b3b54/library/images/Product_slider_color_red.png) no-repeat;
+  float:left;
+}
+
+#colorswitch #white:hover {
+  background: url(http://www.nudeaudio.com/wp-content/themes/eddiemachado-bones-d1b3b54/library/images/Product_slider_color_greenON.png) no-repeat;
+}
+
+#colorswitch #grey:hover {
+  background: url(http://www.nudeaudio.com/wp-content/themes/eddiemachado-bones-d1b3b54/library/images/Product_slider_color_redON.png) no-repeat;
+}
+
+
+#sliderfooter {
+  width:100%;
+  margin:721px 0 0 0;
+  float:left;
+  /*background-color:#ccc;*/
+}
+
+
+#thumbs {
+  width:525px;
+  /*height:80px;*/
+  /*background-color:#ff0000;*/
+  /*background: url(/images/Product_slider_color_thumb_white.png) no-repeat top left;*/
+  margin:0 200px 0 0 ;
+  float:right;
+}
+#thumbs img {
+  margin:0;
+  float:left;
+}
+
+#thumbs2 {
+  width:525px;
+  /*height:80px;*/
+  /*background-color:#ff0000;*/
+  /*background: url(/images/Product_slider_color_thumb_white.png) no-repeat top left;*/
+  margin:0 200px 0 0 ;
+  float:right;
+  display:none;
+}
+
+#thumbs2 img {
+  margin:0;
+  float:left;
+  display:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

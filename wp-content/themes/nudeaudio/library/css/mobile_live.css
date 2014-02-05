@@ -1,0 +1,196 @@
+/*@media only screen 
+    and (device-width:1000px) {
+		.product {
+			clear:none;
+			height: 401px;
+			display: inline-table;
+		}
+		
+	}*/
+
+@media only screen 
+and (max-width : 1000px) {
+  .product {
+	clear:both;
+	display: table;
+	border-bottom: 1px solid #999999;
+	padding-bottom: 50px;	
+	height:auto;
+	width:auto;
+	padding-top:60px;
+  }
+  .prod-img-li {
+	text-align: center;
+	margin-left: 68px;
+  }
+  .products {
+	margin:0;
+  }
+  .prod-letter  {
+	float:left;
+  }
+
+
+	.prod-letter{
+		height:auto;
+		float:letter;
+	}
+	.rightMobile {
+		float:right;
+		min-width:145px;
+		/*border-left: 1px solid #999999;*/
+		padding-left: 30px;
+		margin-top: 20px;
+		width: 155px;
+	}
+	.rightMobile ul {
+		margin-left: 12px;
+	}
+	.divider {
+		display:none;
+	}
+	.overviewButton a{
+		float: left;
+		clear: left;
+		width: 126px;
+		height:40px;
+		line-height:40px;
+	}
+	.divider2 {
+	display:block;
+	width: 1px;
+	height: 172px;
+	float: initial;
+	margin: 20px auto;
+	background-color:#8c9194;
+	}
+
+  div.wrapper {
+	height:100%;
+  }
+
+  div.page {
+  	-webkit-transform: skew(0,0);
+    -webkit-transform-origin: 0% 0%;
+	
+	-moz-transform: skewX(0,0);
+    -moz-transform-origin: 0% 0%;
+	
+	-ms-transform: skew(0); /* IE 9 */
+	-ms-transform-origin:0% 0%; /* IE 9 */
+	
+	-o-transform:skew(0,0); 
+    -o-transform-origin:0% 0%;
+	
+	transform: skew(0,0);
+    transform-origin: 0% 0%;
+	
+	
+	top:0;
+	left:initial;
+	width:100% !important;
+	margin:0;
+	transition:none;
+  }
+  .skewfix {
+  	-webkit-transform: skew(0,0);
+    -webkit-transform-origin: 0% 0%;
+	
+	-moz-transform: skewX(0,0);
+    -moz-transform-origin: 0% 0%;
+	
+	-ms-transform: skew(0); /* IE 9 */
+	-ms-transform-origin:0% 0%; /* IE 9 */
+	
+	-o-transform:skew(0,0); 
+    -o-transform-origin:0% 0%;
+	
+	transform: skew(0,0);
+    transform-origin: 0% 0%;
+  }
+  
+  #content {
+	padding-top:66px;
+  }
+  
+  #Swiredg .prod-img {
+	content:url('../images/mobile/NudeAudio_Move_S-wired_Portable_Speaker_coral_front.png');
+	margin: auto;
+}
+  #Swired .prod-img {
+	content:url('../images/mobile/NudeAudio_Move_S-wired_Portable_Speaker_mint_front.png');
+	margin: auto;
+}
+  #Swiredg img.prod-letter {
+	content:url('../images/mobile/SWired-coral.png');
+	height:auto;
+	}
+ #Swired img.prod-letter {
+	content:url('../images/mobile/SWired-mint.png');
+	height:auto;
+	}
+  #Swiredg .rightMobile, #Swired .rightMobile{
+	height: 165px;
+	}
+  #Sg .prod-img {
+	content:url('../images/mobile/NudeAudio_Move_S_Bluetooth_Speaker_coral_front.png');
+	margin: auto;
+}
+  #S .prod-img {
+	content:url('../images/mobile/NudeAudio_Move_S_Bluetooth_Speaker_mint_front.png');
+	margin: auto;
+}
+  #Sg img.prod-letter {
+	content:url('../images/mobile/S-coral.png');
+	height:auto;
+}
+  #S img.prod-letter {
+	content:url('../images/mobile/S-mint.png');
+	height:auto;
+}
+  #Sg .rightMobile,  #S .rightMobile{
+	height: 180px;
+}
+  #Mg .prod-img {
+	content:url('../images/mobile/NudeAudio_Move_M_Bluetooth_Speaker_coral_front.png');
+	margin: auto;
+}  
+#M .prod-img {
+	content:url('../images/mobile/NudeAudio_Move_M_Bluetooth_Speaker_mint_front.png');
+	margin: auto;
+}
+  #Mg img.prod-letter {
+	content:url('../images/mobile/M-coral.png');
+	height:auto;
+} 
+ #M img.prod-letter {
+	content:url('../images/mobile/M-mint.png');
+	height:auto;
+}
+  #Mg .divider2, #M .divider2{
+	height: 215px;
+	}
+  #Lg .prod-img {
+	content:url('../images/mobile/NudeAudio_Move_L_Bluetooth_Speaker_coral_front.png');
+	margin: auto;
+}  
+#L .prod-img {
+	content:url('../images/mobile/NudeAudio_Move_L_Bluetooth_Speaker_mint_front.png');
+	margin: auto;
+}
+  #Lg img.prod-letter {
+	content:url('../images/mobile/L-coral.png');
+	height:auto;
+}  
+#L img.prod-letter {
+	content:url('../images/mobile/L-mint.png');
+	height:auto;
+}
+  #Lg .divider2, #L .divider2{
+	height: 215px;
+	}
+#Lg .prod-img-li, #L .prod-img-li {
+margin-left: -200px;
+}
+
+}

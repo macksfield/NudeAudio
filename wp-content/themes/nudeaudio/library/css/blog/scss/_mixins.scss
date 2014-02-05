@@ -1,0 +1,78 @@
+// Regular mixins
+@mixin debug($border-width: 1px, $color: #FF0000) {
+	border: $border-width solid $color !important;
+}
+@mixin min-height($height: 400px){
+	min-height: $height;
+	height: auto !important;
+	height: $height;
+}
+@mixin margin-and-padding($margin:0px, $padding:0px){
+	margin: $margin;
+	padding: $padding;
+}
+@mixin letterpress(){
+    text-shadow: 1px 1px #000;
+}
+@mixin letterpress-white(){
+    text-shadow: 1px 1px #FFF;
+}
+@mixin letterpress-grey(){
+    text-shadow: 1px 1px #AAA;
+}
+@mixin letterpress-reset(){
+	text-shadow: 0px 0px;
+}
+// Creates a cross-browser rgba background color.
+@mixin background-rgba($red: 0, $green: 0, $blue: 0, $alpha: 0.75){
+    background-color: rgb($red, $green, $blue);
+    background-color: rgba($red, $green, $blue, $alpha);
+    @if ($legacy-support-for-ie) {
+        @include has-layout;	
+        background-color: transparent\9; $color: rgba($red, $green, $blue, $alpha);
+        @include filter-gradient($color, $color);
+    }
+}
+@mixin transparent($color, $alpha) {
+	$rgba: rgba($color, $alpha);
+	$ie-hex-str: ie-hex-str($rgba);
+//  background: rgb(red($color), green($color), blue($color));
+	$red: red($color);
+	$green: green($color);
+	$blue: blue($color);
+	background: rgb($red, $green, $blue);
+	background: transparent;
+	background: $rgba;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$ie-hex-str},endColorstr=#{$ie-hex-str});
+	zoom: 1;
+}
+@function generate-ie-filter-str($start-colour-hex, $end-colour-hex, $gradient-type) { // Gradient types: 0 = vertical (top to bottom), 1 = horizontal (left to right)
+	@return unquote("progid:DXImageTransform.Microsoft.gradient( startColorstr='" + ie-hex-str($start-colour-hex) + "', endColorstr='" + ie-hex-str($end-colour-hex) + "', GradientType=" + $gradient-type + " )");
+}
+// Fix for vertical linear gradient backgrounds in IE (top to bottom)
+@mixin background-gradient-vertical-ie($start: 0%, $end: 100%, $start-colour: #000000, $end-colour: #FFFFFF){
+	background: -ms-linear-gradient(top, $start-colour $start, $end-colour $end); /* IE10+ */
+	background: linear-gradient(to bottom, $start-colour $start, $end-colour $end); /* W3C */
+	filter: generate-ie-filter-str($start-colour, $end-colour, 0); /* IE6-9 */
+}
+// Fix for horizontal linear gradient backgrounds in IE (left to right)
+@mixin background-gradient-horizontal-ie($start: 0%, $end: 100%, $start-colour: #000000, $end-colour: #FFFFFF){
+	background: -ms-linear-gradient(left, $start-colour $start, $end-colour $end); /* IE10+ */
+	background: linear-gradient(to right, $start-colour $start, $end-colour $end); /* W3C */
+	filter: generate-ie-filter-str($start-colour, $end-colour, 1); /* IE6-9 */
+}
+@function calculate-percentage($percentage-to-match, $section-container-width) {
+	@return percentage($percentage-to-match / $section-container-width);
+} 
+
+// Breakpoint handling
+@mixin until($pixel_width) {
+	@media screen and (max-width: $pixel_width) {
+		@content;
+	}
+}
+
+// Useful functions
+@function calc-percent($target, $container) {
+	@return ($target / $container) * 100%;
+}

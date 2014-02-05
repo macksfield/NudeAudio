@@ -1,0 +1,67 @@
+.wp-cpl-wrap {
+    overflow: hidden;
+    clear: both;
+}
+.wp-cpl-wrap .wp-cpl-wrap-left {
+    float: left;
+    width: 65%;
+}
+.wp-cpl-wrap .wp-cpl-wrap-right {
+    float: right;
+    width: 32%;
+}
+.postbox .hndle span {
+    overflow: hidden;
+    
+}
+.postbox .hndle span span {
+    display: block;
+    float: left;
+    width: 16px;
+    height: 16px;
+    padding: 0 5px 0 0;
+    background-image: url('images/sprite.png');
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    margin-top: -2px;
+}
+.wp-cpl-admin-op span {
+    background-position: 0 0;
+}
+.wp-cpl-admin-ins span {
+    background-position: 0 -16px;
+}
+.wp-cpl-admin-donate span {
+    background-position: 0 -32px;
+}
+.wp-cpl-admin-itg span {
+    background-position: 0 -48px;
+}
+.wp-cpl-admin-proj span {
+    background-position: 0 -64px;
+}
+.wp-cpl-admin-spon span {
+    background-position: 0 -80px;
+}
+.wp-cpl-admin-faq span {
+    background-position: 0 -96px;
+}
+.wp-cpl-admin-social span {
+    background-position: 0 -112px;
+}
+.wp-cpl-admin-ul {
+    margin: 5px 0;
+    padding: 0 0 0 20px;
+}
+.wp-cpl-admin-ul li {
+    padding: 2px 0 2px 10px;
+    list-style: square inside;
+}
+.don_but {
+    display: block;
+}
+.don_but img {
+    display: block;
+    width: 143px;
+    margin: 0 auto;
+}

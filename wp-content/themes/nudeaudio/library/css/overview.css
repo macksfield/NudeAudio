@@ -1,0 +1,246 @@
+#container * {
+	webkit-box-sizing:initial;
+	box-sizing:initial;
+}
+
+
+@font-face {
+  font-family: HelveticaNeueLt;
+  src: url("../fonts/HelveticaNeueLTStd-LtCn.otf");
+}
+@font-face {
+  font-family: HelveticaNeueMd;
+  src: url("../fonts/HelveticaNeueLTStd-MdCn.otf");
+}
+@font-face {
+  font-family: HelveticaNeueLTStd;
+  src: url("../fonts/HelveticaNeueLTStd-Cn.otf");
+}
+@font-face {
+  font-family: HelveticaNeueLTStdBdCn;
+  src: url("../fonts/HelveticaNeueLTStd-BdCn.otf");
+}
+
+
+/*
+body{
+	font-family: 'HelveticaNeueLTStd', arial;
+	font-size: 15px;
+}
+
+#main {
+	margin: 0 auto;
+	padding: 0 0 145px 0;
+	height: 100%;
+	position: relative;
+	min-height: 3325px;
+}*/
+
+#productswipe {
+	font-family: 'HelveticaNeueLTStd', arial;
+	font-size: 15px;
+	height: 713px;
+}
+#midsection.overview {
+padding-bottom: 0px;
+}
+#content.overviewProduct {
+	padding-bottom:0;
+}
+#white {
+ /*background:#eef1f5;*/
+ /*color:#545458;
+ margin-left:47%;*/
+ color:#666666;
+
+ }
+#grey {
+/*background:#545458;
+color:#ef4a5d;17px scroll bar
+margin-left: 1789px;*/
+white-space: nowrap;
+}
+.arrow-right {
+	width: 0; 
+	height: 0; 
+	border-top: 30px solid transparent;
+	border-bottom: 30px solid transparent;
+	border-left: 15px solid #545458;
+	position:absolute;
+	margin-left:5%;
+	z-index: 501;
+	display:none;
+}
+.arrow-left {
+	width: 0; 
+	height: 0; 
+	border-top: 30px solid transparent;
+	border-bottom: 30px solid transparent;
+	border-right: 15px solid #eef1f5;
+	position:absolute;
+	/* Firefox */
+	margin-left: -moz-calc(95% - 14px);
+	/* WebKit */
+	margin-left: -webkit-calc(95% - 14px);
+	/* Opera */
+	margin-left: -o-calc(95% - 14px);
+	/* Standard */
+	margin-left: calc(95% - 14px);
+	z-index: 500;
+	display:none;
+}
+
+.products {
+	margin: 0px 0px 0px 750px;
+}
+.overviewProduct {
+display: inline-table;
+height:635px;
+margin-top: 35px;
+}
+#productswipe {
+height: 768px;
+/*width: 1268px;*/
+overflow: hidden;
+line-height:inherit;
+}
+/*
+#white #Swired:hover, #Swiredg {
+	background-color:white;
+}
+#grey .overviewProduct:hover {
+	background-color:grey;
+}*/
+
+.overviewProduct ul {
+list-style: none;
+}
+
+.produl {
+	margin:0 36px;
+}
+/*
+.overviewProduct li {
+	margin-left: 36px;
+	margin-right: 36px;
+}
+.overviewProduct li.imgLi{
+	margin:0 0;
+}*/
+
+#Swired, #Swiredg {
+	width:235px;
+	}
+#S, #Sg {
+	width:235px;
+	}
+#M, #Mg {
+	width:235px;
+	}
+#L, #Lg {
+	width:315px;
+	}
+.overviewButton a{
+	display: block;
+	width: 172px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	font-size: 18px;
+}
+#grey .overviewButton a{
+	color:#333333;
+}
+#white .overviewButton a{
+	color:#666666;
+}
+.teal a{
+	background:#98e2bf;
+	color:#545458;
+}
+.peach a{
+	background: #ef4a5d;
+}
+.overviewButton a {
+	text-decoration:none;
+}
+.prod-letter {
+margin: 20px 0 25px 0;
+display: block;
+height:58px;
+width:auto;
+}
+
+.prodDesc {
+height: 65px;
+}
+#grey .overviewProduct {
+	-webkit-backface-visibility: hidden;
+}
+
+#grey .prodDesc,  #grey .featDesc{
+/*color: #eef1f5;*/
+color:#999999;
+}
+#white .prodDesc,  #white .featDesc{
+color: #666666;
+}
+
+.overviewProduct span {
+font-weight: bold;
+}
+
+.prod-feat {
+	float: left;
+	margin:0 20px 20px 0;
+	clear:left;
+}
+.prod-features {
+	height:180px;
+}
+
+.featDesc {
+	float: left;
+	height: 35px;
+	width: 60%;
+	padding-top: 9px;
+	font-size:13px;
+	font-family: 'HelveticaNeueLTStdBdCn', arial;
+}
+
+.prod-img {
+width: auto;
+margin: 40px 0 20px 0;
+}
+/*
+#prod1G > .prod-img {
+	background-image:url('../images/NudeAudio_Move_S-wired_Portable_Speaker_coral_front');
+	height:113px;
+	width:173px;
+	background-repeat:no-repeat;
+}*/
+
+
+
+
+.divider {
+	height:1px;
+	width:90%;
+	margin-bottom: 25px;
+	min-width: 172px;
+}
+
+#white .divider {
+	background-color:#a3a3a3;
+}
+#grey .divider {
+	background-color:#8c9194;
+}
+
+.shadow {
+	-moz-box-shadow:0px 0px 15px rgba(0,0,0,0.5);
+	-webkit-box-shadow:0px 0px 15px rgba(0,0,0,0.5);
+	box-shadow:0px 0px 15px rgba(0,0,0,0.5);
+}
+
+

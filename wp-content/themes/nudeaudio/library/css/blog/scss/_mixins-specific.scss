@@ -1,0 +1,14 @@
+@mixin box($width: auto, $font_size: 100%, $background-color: $mint) {
+	min-width: $width;
+	background: $background-color;
+	padding: 5px 13px;
+	font-size: $font_size;
+	display: inline-block;
+}
+@mixin box-hover($bg: $dark-grey) {
+	background: $bg !important;
+	color: $red !important;
+}
+@mixin background-box-transparency($background-color: black, $transparency: 0.82) {
+	@include transparent($background-color, $transparency);
+}

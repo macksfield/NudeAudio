@@ -1,0 +1,21 @@
+.blog .other-recent-posts a, .blog .back-to-blog-index a, .blog .back a, .filters a, a.more, .categories .post-categories a {
+	color: $dark-grey;
+	@include transition(background-color 0.2s ease-in-out, color 0.2s ease-in-out);
+	&:hover {
+		@include box-hover();
+	}
+}
+.post-categories a {
+	color: $dark-grey;
+}
+.recent-posts > li .info-panel .post-categories a {
+	&:hover {
+		color: white !important;
+	}
+}
+
+
+/* Mint and grey buttons hover states */
+.filters ul a,  {
+	
+}

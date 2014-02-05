@@ -1,0 +1,66 @@
+div.page{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 0 0 -780px;
+    width: 200%;
+    transition: width 0.75s;
+    overflow: hidden;
+    height: 100%;
+	/*padding-top:50px;*/
+	
+	-webkit-transform: skew(45deg,0);
+    -webkit-transform-origin: 0% 0%;
+	
+	-moz-transform: skewX(45deg,0);
+    -moz-transform-origin: 0% 0%;
+	
+	-ms-transform: skew(45deg); /* IE 9 */
+	-ms-transform-origin:0% 0%; /* IE 9 */
+	
+	-o-transform:skew(45deg,0); 
+    -o-transform-origin:0% 0%;
+	
+	transform: skew(45deg,0);
+    transform-origin: 0% 0%;
+}
+
+.skewfix{
+	-webkit-transform: skew(-45deg,0);
+    -webkit-transform-origin:0% 0%;
+	
+	-moz-transform: skewX(-45deg,0);
+    -moz-transform-origin: 0% 0%;
+	
+	-ms-transform: skew(-45deg); /* IE 9 */
+	-ms-transform-origin:0% 0%; /* IE 9 */
+	
+	-o-transform:skew(-45deg,0); 
+    -o-transform-origin:0% 0%;
+	
+	transform: skew(-45deg,0);
+    transform-origin: 0% 0%;
+}
+
+div.content1{
+    background:#eef1f5;
+}
+div.content2{
+    background: #545458;
+    width:0px;
+}
+
+.skew{
+	width:100%;
+    position: relative;
+	margin: 0 auto;
+	padding: 0;
+}
+
+div.wrapper{
+    /*width: 100%;
+    overflow: hidden;*/
+    position: relative;
+    height: 713px;
+}
+

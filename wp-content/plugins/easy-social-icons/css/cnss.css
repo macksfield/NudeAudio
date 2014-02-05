@@ -1,0 +1,38 @@
+table.cnss-social-icon tr td, table.cnss-social-icon, table.cnss-social-icon tr {
+	padding:0 !important;
+	margin:0 !important;
+	border:none !important;
+	vertical-align:middle !important;
+	background:none !important;
+	/*background-color:#ff0000;*/
+		width:178px !important;
+	
+}
+table.cnss-social-icon tr td img{
+	max-width:100% !important;
+/*    background: transparent;
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; 
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);   
+    zoom: 1;*/
+}
+/*table.cnss-social-icon tr td img:hover{
+	opacity:0.5;
+	filter:alpha(opacity=50);
+	margin-top:-15px;
+}*/
+table.cnss-social-icon tr td a img, table.cnss-social-icon tr td a:hover img, table.cnss-social-icon tr td a img:hover{
+	border:none !important;
+}
+table.cnss-social-icon tr td a img:hover, table.cnss-social-icon tr td a:hover img{
+	max-width:100% !important;	
+}
+/*table.cnss-social-icon tr td img{
+	margin-right:4px;
+}*/
+
+#sortable { list-style-type: none; margin: 10px 0 0; padding: 0; width: 100%; }
+#sortable ul { margin-left:20px; list-style: none; }
+#sortable li { padding: 2px 0px; margin: 4px 0px;  border: 1px solid #DDDDDD; cursor: move; -moz-border-radius:6px;}
+#sortable li span { display: block; background: #f7f7f7;  padding: 5px 10px; color:#808080; font-size:13px; font-weight:bold;}
+#sortable li.placeholder{border: dashed 2px #ccc;background-color:#FFF;height:20px;}
+.clear {clear: both}
